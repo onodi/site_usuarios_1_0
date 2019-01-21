@@ -585,6 +585,7 @@
               </div>
         </section>
         <hr class="divider-w">
+<!--
         <section class="module bg-dark-90" data-background="assets/images/especial.jpg">
           <div class="container">
             <div class="row">
@@ -603,6 +604,7 @@
           </div>
         </section>
         <hr class="divider-w">  
+-->
           
 <!--
         <section class="module bg-light bg-dark-30">
@@ -666,6 +668,7 @@
         </section>        
 -->
         
+<!--
         <section class="home-section home-full-height bg-dark-30"  data-background="assets/images/section-5.jpg">
         <div class="video-player" data-property="{videoURL:'https://www.youtube.com/watch?v=bNucJgetMjE', containment:'.home-section', startAt:18, mute:false, autoPlay:true, loop:true, opacity:1, showControls:false, showYTLogo:false, vol:25}"></div>
         <div class="video-controls-box">
@@ -681,6 +684,7 @@
           </div>
         </div>
       </section>
+-->
         
         
         
@@ -1607,6 +1611,12 @@
     -->
     <script type="text/javascript">
             
+        /**
+        * variaveis para determinar a duracao do slider da secao
+        * de checkups
+        **/
+        var timeS3 = 4, timeS6 = 2;
+        
 //        var slider3 = function (_x, _y, _z){
         var slider3 = function (){
             
@@ -1629,11 +1639,13 @@
                 $('input:radio[id="'+_x+'"]').attr('checked', true);
                 $('input:radio[id="'+_y+'"]').attr('checked', false);
             }
+            timeOut3;
 
           };
         var slider6 = function (){
             
             var _x = 'slide4', _y = 'slide5', _z = 'slide6', _k = 'slide7', _i = 'slide8', _c = 'slide9';
+            
             if($('input:radio[id="'+ _x +'"]').is(':checked') == true){
 //                    alert("slide1");
                 $('input:radio[id="'+_x+'"]').attr('checked', false);
@@ -1643,58 +1655,67 @@
                 $('input:radio[id="'+_i+'"]').attr('checked', false);
                 $('input:radio[id="'+_c+'"]').attr('checked', false);
             }
+            
             else if($('input:radio[id="'+_y+'"]').is(':checked') == true){
 //                    alert("slide2");
-                $('input:radio[id="'+_x+'"]').attr('checked', false);
                 $('input:radio[id="'+_y+'"]').attr('checked', false);
                 $('input:radio[id="'+_z+'"]').attr('checked', true);
+                $('input:radio[id="'+_x+'"]').attr('checked', false);
                 $('input:radio[id="'+_k+'"]').attr('checked', false);
                 $('input:radio[id="'+_i+'"]').attr('checked', false);
                 $('input:radio[id="'+_c+'"]').attr('checked', false);
             }
+            
             else if($('input:radio[id="'+_z+'"]').is(':checked') == true){
 //                    alert("slide3");
-                $('input:radio[id="'+_x+'"]').attr('checked', false);
-                $('input:radio[id="'+_y+'"]').attr('checked', false);
                 $('input:radio[id="'+_z+'"]').attr('checked', false);
                 $('input:radio[id="'+_k+'"]').attr('checked', true);
+                $('input:radio[id="'+_x+'"]').attr('checked', false);
+                $('input:radio[id="'+_y+'"]').attr('checked', false);
                 $('input:radio[id="'+_i+'"]').attr('checked', false);
                 $('input:radio[id="'+_c+'"]').attr('checked', false);
             }
-            if($('input:radio[id="'+ _k +'"]').is(':checked') == true){
+            else if($('input:radio[id="'+ _k +'"]').is(':checked') == true){
 //                    alert("slide1");
+                $('input:radio[id="'+_k+'"]').attr('checked', false);
+                $('input:radio[id="'+_i+'"]').attr('checked', true);
                 $('input:radio[id="'+_x+'"]').attr('checked', false);
                 $('input:radio[id="'+_y+'"]').attr('checked', false);
                 $('input:radio[id="'+_z+'"]').attr('checked', false);
-                $('input:radio[id="'+_k+'"]').attr('checked', false);
-                $('input:radio[id="'+_i+'"]').attr('checked', true);
                 $('input:radio[id="'+_c+'"]').attr('checked', false);
             }
             else if($('input:radio[id="'+_i+'"]').is(':checked') == true){
 //                    alert("slide2");
+                $('input:radio[id="'+_i+'"]').attr('checked', false);
+                $('input:radio[id="'+_c+'"]').attr('checked', true);
                 $('input:radio[id="'+_x+'"]').attr('checked', false);
                 $('input:radio[id="'+_y+'"]').attr('checked', false);
                 $('input:radio[id="'+_z+'"]').attr('checked', false);
                 $('input:radio[id="'+_k+'"]').attr('checked', false);
-                $('input:radio[id="'+_i+'"]').attr('checked', false);
-                $('input:radio[id="'+_c+'"]').attr('checked', true);
             }
             else if($('input:radio[id="'+_c+'"]').is(':checked') == true){
 //                    alert("slide3");
+                $('input:radio[id="'+_c+'"]').attr('checked', false);
                 $('input:radio[id="'+_x+'"]').attr('checked', true);
                 $('input:radio[id="'+_y+'"]').attr('checked', false);
                 $('input:radio[id="'+_z+'"]').attr('checked', false);
                 $('input:radio[id="'+_k+'"]').attr('checked', false);
                 $('input:radio[id="'+_i+'"]').attr('checked', false);
-                $('input:radio[id="'+_c+'"]').attr('checked', false);
             }
+            timeOut6;
 
           };
+        var timeOut3 = setTimeout(slider3, timeS3 * 1000);
+        var timeOut6 = setTimeout(slider6, timeS6 * 1000);
+        var slider_3_interval = setInterval(slider3, timeS3 * 1000);
+        var slider_6_interval = setInterval(slider6, timeS6 * 1000);
+      
         function iniciar() {
 //            setInterval(slider3("slide1","slide2","slide3"), 2000);
-            setInterval(slider3, 4000);
-            setInterval(slider6, 2000);
-            
+//            slider_3_interval;
+//            slider_6_interval
+            slider6;
+            slider3;
         }
         window.addEventListener("load", iniciar, false);
 
