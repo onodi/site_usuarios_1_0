@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Document Title
+    =============================================-->
+    <title>Check Var - Investidores</title>
+    <!--Favicons
+    =============================================-->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/images/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--Stylesheets
+    =============================================-->
+    <!-- Default stylesheets-->
+    <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Template specific stylesheets-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Volkhov:400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link href="assets/lib/animate.css/animate.css" rel="stylesheet">
+    <link href="assets/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/lib/et-line-font/et-line-font.css" rel="stylesheet">
+    <link href="assets/lib/flexslider/flexslider.css" rel="stylesheet">
+    <link href="assets/lib/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link href="assets/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
+    <link href="assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
+    <!-- Main stylesheet and color file-->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/solid.css" integrity="sha384-r/k8YTFqmlOaqRkZuSiE9trsrDXkh07mRaoGBMoDcmA58OHILZPsk29i2BsFng1B" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/fontawesome.css" integrity="sha384-4aon80D8rXCGx9ayDt85LbyUHeMWd3UiBaWliBlJ53yzm9hqN21A+o1pqoyK04h+" crossorigin="anonymous">
+    <style>
+        .blur_bkg {
+            -webkit-filter: blur(0.15em);
+            filter: blur(0.15em);
+            -moz-filter: blur(0.15em);
+            -o-filter: blur(0.15em);
+            -ms-filter: blur(0.15em);
+        }
+        
+        .blur_fnt {
+            -webkit-filter: blur(0em) !importante;
+            filter: blur(0em) !importante;
+            -moz-filter: blur(0em) !importante;
+            -o-filter: blur(0em) !importante;
+            -ms-filter: blur(0em) !importante;
+        }
+        
+        .vd_youtube {
+            width: calc(56.0vmax/1.5);
+            height: calc(31.5vmax/1.5);
+            margin: 3em;
+            box-shadow: rgba(2, 2, 2, 0.5) .51em .2em 5em 1em;
+        }
+        
+        .gamba {
+            padding-top: 15vh;
+        }
+        
+        .sliderG {
+            display: block;
+            height: 190vh;
+            /*              width: 450px;*/
+            margin: auto;
+            /*              margin-top: 20px;*/
+            position: relative;
+            margin-bottom: 22vh;
+        }
+        
+        @media (max-width:991px) {
+            .sliderG {
+                display: block;
+                height: 190vh;
+                /*              width: 450px;*/
+                margin: auto;
+                /*              margin-top: 20px;*/
+                position: relative;
+                margin-bottom: 22vh;
+            }
+            .alinhamento_video {
+                text-align: center !important;
+                padding-top: 20%;
+            }
+        }
+        
+        @media (max-width:560px) {
+            .sliderG {
+                display: block;
+                height: 70vh;
+                /*              width: 450px;*/
+                margin: auto;
+                /*              margin-top: 20px;*/
+                position: relative;
+                margin-bottom: 22vh;
+            }
+            .alinhamento_video {
+                text-align: center !important;
+                padding-top: 20%;
+            }
+        }
+        
+        .sliderG {
+            display: block;
+            height: 40vh;
+            /*              width: 450px;*/
+            margin: auto;
+            /*              margin-top: 20px;*/
+            position: relative;
+            margin-bottom: 22vh;
+        }
+        
+        .sliderG li {
+            list-style: none;
+            position: absolute;
+        }
+        
+        .sliderG img {
+            margin: auto;
+            /*
+              height: 100%;
+              width: 100%;
+*/
+            vertical-align: top;
+        }
+        
+        .sliderG input {
+            display: none;
+        }
+        
+        .sliderG label {
+            display: none;
+        }
+        
+        .sliderG li:nth-child(1) label {
+            left: 30px;
+        }
+        
+        .sliderG li:nth-child(2) label {
+            left: 120px;
+        }
+        
+        .sliderG li:nth-child(3) label {
+            left: 210px;
+        }
+        
+        .sliderG img {
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        .sliderG li input:checked ~ img {
+            opacity: 1;
+            visibility: visible;
+            z-index: 10;
+        }
+        
+        .img_menu_filtro {
+            width: 50%;
+            /*              margin-left: 25%;*/
+            display: inline-block;
+            padding: 10px;
+        }
+        
+        .filter {
+            text-align: center;
+            list-style: none;
+            padding: 0;
+            margin: 0 0 70px;
+            display: inline-block;
+        }
+        
+        .filter > li {
+            text-align: center;
+            display: inline-block;
+            padding: 0 5px 10px;
+            margin: 0 25px;
+            width: 8%;
+        }
+        
+        .filter > li > a {
+            text-align: center;
+        }
+        
+        #logoTop {
+            width: 80px;
+            height: 80px;
+            background-image: url(assets/images/logo/Logocfundo1.svg);
+            background-size: cover;
+            position: relative;
+            float: left;
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        .recuo {
+            margin-left: 2em;
+        }
+        
+        @media (min-width: 768px) {
+            #works-grid > li {
+                width: 10% !important;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            #works-grid > li {
+                width: 33% !important;
+            }
+            .img_menu_filtro {
+                width: 80%;
+                /*              margin-left: 25%;*/
+                display: inline-block;
+                padding: 10px;
+            }
+            .filter > li {
+                text-align: center;
+                display: inline-block;
+                padding: 0 10px 10px;
+                margin: 0 30px;
+                width: 20%;
+            }
+            .quadroItensE {
+                height: 280px !important;
+                margin: 0px 0px 10px 0px !important;
+                padding: 0px !important;
+            }
+            .quadroItensC {
+                height: 240px !important;
+                margin: 0px 0px 0px 0px !important;
+                padding: 0px !important;
+            }
+            .quadroItensCtop {
+                height: 220px !important;
+                margin: 0px 0px 10px 0px !important;
+                padding: 0px !important;
+            }
+            .quadroItensD {
+                height: 280px !important;
+                margin: 0px 0px 10px 0px !important;
+                padding: 0px !important;
+            }
+            .quadroItensV {
+                height: 280px !important;
+                margin: 0px 0px 10px 0px !important;
+                padding: 0px !important;
+            }
+            .alinhamento_video {
+                text-align: center !important;
+                padding-top: 20%;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            #logoTop {
+                width: 90px !important;
+                height: 80px!important;
+                background-image: url(assets/images/logo/Logocfundo1.png)!important;
+                background-size: 90px 80px;
+                /*
+                position: relative!important;
+                float: left!important;
+*/
+                padding: 0px!important;
+                margin: 15px!important;
+            }
+        }
+        
+        .quadroItensE {
+            height: 200px;
+            margin: 0px 0px 10px 0px;
+            padding: 8px;
+            background-color: rgba(43, 43, 43, 0.2);
+            background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.9) 50%, rgba(43, 43, 43, 0.1));
+            border: 2px solid rgba(43, 43, 43, 0.8);
+            border-radius: 10px 40px 10px 40px;
+        }
+        
+        .quadroItensC {
+            height: 200px;
+            margin: 0px 0px 10px 0px;
+            padding: 8px;
+            background-color: rgba(43, 43, 43, 0.2);
+            border: 2px solid rgba(43, 43, 43, 0.8);
+            border-radius: 40px 40px 10px 10px;
+        }
+        
+        .quadroItensCtop {
+            height: 200px;
+            margin: 0px 0px 10px 0px;
+            padding: 8px;
+            background-color: rgba(43, 43, 43, 0.2);
+            background-image: linear-gradient( 0deg, rgba(255, 255, 255, 0.9) 50%, rgba(43, 43, 43, 0.1));
+            border: 2px solid rgba(43, 43, 43, 0.8);
+            border-radius: 40px 40px 10px 10px;
+        }
+        
+        .quadroItensCbody {
+            height: 800px;
+            margin: 10px 0px 10px 0px;
+            padding: 8px;
+            background-color: rgba(200, 200, 200, 0.01);
+            border: 2px solid rgba(43, 43, 43, 0.5);
+            border-radius: 40px 40px 10px 10px;
+        }
+        
+        .quadroItensCbody img {
+            margin-top: 80px;
+            height: 600px;
+            /*              margin: 3vmin 4%;*/
+        }
+        
+        .quadroItensD {
+            height: 200px;
+            margin: 0px 0px 10px 0px;
+            padding: 8px;
+            background-color: rgba(43, 43, 43, 0.2);
+            background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.9) 50%, rgba(43, 43, 43, 0.1));
+            border: 2px solid rgba(43, 43, 43, 0.8);
+            border-radius: 40px 10px 40px 10px;
+        }
+        
+        .quadroItensV {
+            height: 200px;
+            margin: 0px 0px 10px 0px;
+            padding: 8px;
+            background-color: rgba(255, 255, 255, 0.01);
+            background: transparent;
+            border: 0px solid rgba(43, 43, 43, 0.8);
+            border-radius: 10px 40px 10px 40px;
+        }
+        
+        .itemPecas {
+            padding: 10px;
+        }
+        
+        .paddzero {
+            padding: 0px !important;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        
+        .padd150 {
+            margin-top: 50px;
+            padding-bottom: 150px;
+            padding-top: 120px;
+            background-color: rgba(43, 43, 43, 0.7);
+            border: 3px solid rgba(43, 43, 43, 1);
+            border-radius: 10px 50px 50px 10px;
+        }
+        
+        .alinhamento_video {
+            text-align: left !important;
+            padding-top: 20%;
+        }
+        
+        .alinhamento_left {
+            text-align: left !important;
+            padding-top: 20%;
+        }
+        
+        .alinhamento_right {
+            text-align: right !important;
+            padding-top: 20%;
+        }
+        /*
+          #works-grid > li{
+              width: 10% !important;
+          }
+*/
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+    <main>
+        <div class="page-loader">
+            <div class="loader">Carregando...</div>
+        </div>
+        <!--
+    MENU PRINCIPAL
+    **************
+-->
+        <nav class="navbar navbar-custom navbar-fixed-top navbar-transparent" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                    <a class="navbar-brand" href="index.html" id="logoTop"> </a>
+                </div>
+                <div class="collapse navbar-collapse" id="custom-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html#home">INÍCIO</a></li>
+                        <li><a href="index.html#nos">CHECKUP</a></li>
+                        <li><a href="index.html#vantagens">VANTAGENS</a></li>
+                        <li><a href="index.html#works_b">ITENS</a></li>
+                        <li><a href="index.html#fxpreta">QUANTO TEMPO</a></li>
+                        <li><a href="index.html#olhaquemestafalando">OPINIÕES</a></li>
+                        <li><a href="index.html#team">RESPONSÁVEIS</a></li>
+                        <li><a href="index.html#contact">CONTATO</a></li>
+                        <li><a href="#invest">INVESTIMENTO</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--
+    CABEÇALHO
+    *********
+-->
+        <section class="home-section home-parallax home-fade home-full-height bg-dark-60" id="home" data-background="assets/images/secao_2.jpg">
+            <div class="titan-caption">
+                <div class="caption-content">
+                    <div class="font-alt mt-sm-80 mb-80 titan-title-size-1 cor_tom_amarelo"> CheckVar, uma forma de controlar e acompanhar o desgaste de seu veículo,
+                        <br>ajudando-o a programar manutenções preventivas periódicas. </div>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="font-alt mb-40 mt-sm-80 titan-title-size-2 cor_tom_cinza_claro"> A manutenção preventiva no seu veículo </div>
+                    <div class="font-alt mt-sm-80 mb-80 titan-title-size-4 cor_tom_cinza"> <span class="rotate">
+                            Maior segurança no trânsito | Diminui a emissão de poluentes | Reduz o cosumo de combustível
+                        </span> </div>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="font-alt mt-sm-80 mb-20 titan-title-size-1 cor_tom_amarelo"> Atuando preventivamente, os gastos com peças e manutenção do veículo são bem menores, além da economia de combustível.
+                        <!--<span class="rotate">
+                    Garante maior segurança no trânsito | Diminui a emissão de poluentes | Reduz o cosumo de combustível
+                </span>--></div>
+                </div>
+            </div>
+        </section>
+        <section class="module pb-0 bg-dark-b wow fadeInUp" onclick="wow fadeInUp" id="invest">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                        <div class="alt-services-image align-center"><img src="assets/images/invest_cover.jpeg" alt="Porque investir na CheckVar"> </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br> </section>
+        <hr class="divider-d">
+        <footer class="footer bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-4 col-xs-offset-4 hidden-md hidden-lg">
+                        <div class="footer-social-links"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-skype"></i></a> </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <p class="copyright font-alt">&copy; 2019&nbsp;<a href="https://transitabile.com.br/portal/">Transitabile</a>, All Rights Reserved</p>
+                    </div>
+                    <div class="col-md-6 hidden-xs hidden-sm">
+                        <!--                        <div class="footer-social-links"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-skype"></i></a> </div>--></div>
+                </div>
+            </div>
+        </footer>
+        <!--      </div>-->
+        <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
+    </main>
+    <!--  
+    JavaScripts
+    =============================================
+    -->
+    <script type="text/javascript">
+        function abrirefechar() {
+            $("#works").toggle(500);
+        }
+        //        var slider3 = function (_x, _y, _z){
+        var slider3 = function () {
+            var _x = 'slide1'
+                , _y = 'slide2'
+                , _z = 'slide3';
+            if ($('input:radio[id="' + _x + '"]').is(':checked') == true) {
+                //                    alert("slide1");
+                $('input:radio[id="' + _x + '"]').attr('checked', false);
+                $('input:radio[id="' + _y + '"]').attr('checked', true);
+                $('input:radio[id="' + _z + '"]').attr('checked', false);
+            }
+            else if ($('input:radio[id="' + _y + '"]').is(':checked') == true) {
+                //                    alert("slide2");
+                $('input:radio[id="' + _y + '"]').attr('checked', false);
+                $('input:radio[id="' + _z + '"]').attr('checked', true);
+                $('input:radio[id="' + _x + '"]').attr('checked', false);
+            }
+            else if ($('input:radio[id="' + _z + '"]').is(':checked') == true) {
+                //                    alert("slide3");
+                $('input:radio[id="' + _z + '"]').attr('checked', false);
+                $('input:radio[id="' + _x + '"]').attr('checked', true);
+                $('input:radio[id="' + _y + '"]').attr('checked', false);
+            }
+        };
+        let g_if = 0;
+        let g_func = 0;
+        var slider6 = function () {
+            var _x = 'slide4'
+                , _y = 'slide5'
+                , _z = 'slide6'
+                , _k = 'slide7'
+                , _i = 'slide8'
+                , _c = 'slide9';
+            if ($('input:radio[id="slide4"]').is(':checked') == true) {
+                //                    alert("slide1");
+                $('input:radio[id="slide4"]').attr('checked', false);
+                $('input:radio[id="slide6"]').attr('checked', false);
+                $('input:radio[id="slide5"]').attr('checked', true);
+                //                $('input:radio[id="slide7"]').attr('checked', false);
+                //                $('input:radio[id="slide8"]').attr('checked', false);
+                //                $('input:radio[id="slide9"]').attr('checked', false);
+                g_if++;
+            }
+            else if ($('input:radio[id="slide5"]').is(':checked') == true) {
+                //                    alert("slide2");
+                $('input:radio[id="slide5"]').attr('checked', false);
+                $('input:radio[id="slide4"]').attr('checked', false);
+                $('input:radio[id="slide6"]').attr('checked', true);
+                //                $('input:radio[id="slide7"]').attr('checked', false);
+                //                $('input:radio[id="slide8"]').attr('checked', false);
+                //                $('input:radio[id="slide9"]').attr('checked', false);
+                g_if++;
+            }
+            else if ($('input:radio[id="slide6"]').is(':checked') == true) {
+                //                    alert("slide3");
+                $('input:radio[id="slide6"]').attr('checked', false);
+                //                $('input:radio[id="slide7"]').attr('checked', true);
+                $('input:radio[id="slide5"]').attr('checked', false);
+                $('input:radio[id="slide4"]').attr('checked', true);
+                //                $('input:radio[id="slide8"]').attr('checked', false);
+                //                $('input:radio[id="slide9"]').attr('checked', false);
+                g_if++;
+            }
+            //            else if ($('input:radio[id="' + _k + '"]').is(':checked') == true) { // // alert("slide4"); // $('input:radio[id="slide7"]').attr('checked', false); // $('input:radio[id="slide8"]').attr('checked', true); // $('input:radio[id="slide4"]').attr('checked', false); // $('input:radio[id="slide5"]').attr('checked', false); // $('input:radio[id="slide6"]').attr('checked', false); // $('input:radio[id="slide9"]').attr('checked', false); // g_if++; // } // else if ($('input:radio[id="slide8"]').is(':checked') == true) { // // alert("slide5"); // $('input:radio[id="slide8"]').attr('checked', false); // $('input:radio[id="slide9"]').attr('checked', true); // $('input:radio[id="slide4"]').attr('checked', false); // $('input:radio[id="slide5"]').attr('checked', false); // $('input:radio[id="slide6"]').attr('checked', false); // $('input:radio[id="slide7"]').attr('checked', false); // g_if++; // } // else if ($('input:radio[id="slide9"]').is(':checked') == true) { // // alert("slide6"); // $('input:radio[id="slide9"]').attr('checked', false); // $('input:radio[id="slide4"]').attr('checked', true); // $('input:radio[id="slide5"]').attr('checked', false); // $('input:radio[id="slide6"]').attr('checked', false); // $('input:radio[id="slide7"]').attr('checked', false); // $('input:radio[id="slide8"]').attr('checked', false); // g_if++; // }
+            g_func++;
+            console.log(g_func + "---func");
+            console.log(g_if + "-----------if");
+        };
+
+        function iniciaSlides() {}
+
+        function iniciar() {
+            //            setInterval(slider3("slide1","slide2","slide3"), 2000);
+            setInterval(slider3, 4000);
+            //            setInterval(slider6, 1500);
+            setInterval(slider6, 4000);
+            iniciaSlides();
+            abrirefechar();
+        }
+        window.addEventListener("load", iniciar, false);
+        //        $("#works").toggle(10);
+        abrirefechar();
+    </script>
+    <script src="assets/lib/jquery/dist/jquery.js"></script>
+    <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/lib/wow/dist/wow.js"></script>
+    <script src="assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
+    <script src="assets/lib/isotope/dist/isotope.pkgd.js"></script>
+    <script src="assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
+    <script src="assets/lib/flexslider/jquery.flexslider.js"></script>
+    <script src="assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="assets/lib/smoothscroll.js"></script>
+    <script src="assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
+    <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

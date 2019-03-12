@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR" dir="ltr">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--  
-    Document Title
-    =============================================
-    -->
+    <!--Document Title
+    =============================================-->
     <title>Check Var</title>
-    <!--  
-    Favicons
-    =============================================
-    -->
+    <!--Favicons
+    =============================================-->
     <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-icon-72x72.png">
@@ -30,11 +27,8 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="assets/images/favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <!--  
-    Stylesheets
-    =============================================
-    
-    -->
+    <!--Stylesheets
+    =============================================-->
     <!-- Default stylesheets-->
     <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Template specific stylesheets-->
@@ -52,1677 +46,883 @@
     <!-- Main stylesheet and color file-->
     <link href="assets/css/style.css" rel="stylesheet">
     <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
-      <style>
-          .blur_bkg{
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/solid.css" integrity="sha384-r/k8YTFqmlOaqRkZuSiE9trsrDXkh07mRaoGBMoDcmA58OHILZPsk29i2BsFng1B" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/fontawesome.css" integrity="sha384-4aon80D8rXCGx9ayDt85LbyUHeMWd3UiBaWliBlJ53yzm9hqN21A+o1pqoyK04h+" crossorigin="anonymous">
+    <style>
+        .blur_bkg {
             -webkit-filter: blur(0.15em);
             filter: blur(0.15em);
             -moz-filter: blur(0.15em);
             -o-filter: blur(0.15em);
             -ms-filter: blur(0.15em);
-          }
-          .blur_fnt{
+        }
+        
+        .blur_fnt {
             -webkit-filter: blur(0em) !importante;
             filter: blur(0em) !importante;
             -moz-filter: blur(0em) !importante;
             -o-filter: blur(0em) !importante;
             -ms-filter: blur(0em) !importante;
-          }
-          .vd_youtube{
-              width:calc(56.0vmax/1.5);
-              height: calc(31.5vmax/1.5);
-              margin: 3em;
-              box-shadow: rgba(2, 2, 2, 0.5) .51em .2em 5em 1em ;              
-          }
-          
-          .gamba{
-              padding-top: 15vh;
-          }
-          .sliderG {
-                  display: block;
-                  height: 190vh;
-    /*              width: 450px;*/
-                  margin: auto;
-    /*              margin-top: 20px;*/
-                  position: relative;
-                  margin-bottom: 22vh;
-            }
-          @media (max-width:991px) {
-              .sliderG {
-                  display: block;
-                  height: 190vh;
-    /*              width: 450px;*/
-                  margin: auto;
-    /*              margin-top: 20px;*/
-                  position: relative;
-                  margin-bottom: 22vh;
-            }
-          }
-          @media (max-width:560px) {
-              .sliderG {
-                  display: block;
-                  height: 70vh;
-    /*              width: 450px;*/
-                  margin: auto;
-    /*              margin-top: 20px;*/
-                  position: relative;
-                  margin-bottom: 22vh;
-            }
-          }
-          .sliderG {
-              display: block;
-              height: 40vh;
-/*              width: 450px;*/
-              margin: auto;
-/*              margin-top: 20px;*/
-              position: relative;
-              margin-bottom: 22vh;
         }
-
-          
-          .sliderG li {
-              list-style: none;
-              position: absolute;
-          }
-          .sliderG img {
-              margin: auto;
-/*
+        
+        .vd_youtube {
+            width: calc(56.0vmax/1.5);
+            height: calc(31.5vmax/1.5);
+            margin: 3em;
+            box-shadow: rgba(2, 2, 2, 0.5) .51em .2em 5em 1em;
+        }
+        
+        .gamba {
+            padding-top: 15vh;
+        }
+        
+        .sliderG {
+            display: block;
+            height: 190vh;
+            /*              width: 450px;*/
+            margin: auto;
+            /*              margin-top: 20px;*/
+            position: relative;
+            margin-bottom: 22vh;
+        }
+        
+        @media (max-width:991px) {
+            .sliderG {
+                display: block;
+                height: 190vh;
+                /*              width: 450px;*/
+                margin: auto;
+                /*              margin-top: 20px;*/
+                position: relative;
+                margin-bottom: 22vh;
+            }
+            .alinhamento_video {
+                text-align: center !important;
+                padding-top: 20%;
+            }
+        }
+        
+        @media (max-width:560px) {
+            .sliderG {
+                display: block;
+                height: 70vh;
+                /*              width: 450px;*/
+                margin: auto;
+                /*              margin-top: 20px;*/
+                position: relative;
+                margin-bottom: 22vh;
+            }
+            .alinhamento_video {
+                text-align: center !important;
+                padding-top: 20%;
+            }
+        }
+        
+        .sliderG {
+            display: block;
+            height: 40vh;
+            /*              width: 450px;*/
+            margin: auto;
+            /*              margin-top: 20px;*/
+            position: relative;
+            margin-bottom: 22vh;
+        }
+        
+        .sliderG li {
+            list-style: none;
+            position: absolute;
+        }
+        
+        .sliderG img {
+            margin: auto;
+            /*
               height: 100%;
               width: 100%;
 */
-              vertical-align: top;
-          } 
-          .sliderG input {
+            vertical-align: top;
+        }
+        
+        .sliderG input {
             display: none;
+        }
+        
+        .sliderG label {
+            display: none;
+        }
+        
+        .sliderG li:nth-child(1) label {
+            left: 30px;
+        }
+        
+        .sliderG li:nth-child(2) label {
+            left: 120px;
+        }
+        
+        .sliderG li:nth-child(3) label {
+            left: 210px;
+        }
+        
+        .sliderG img {
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        .sliderG li input:checked ~ img {
+            opacity: 1;
+            visibility: visible;
+            z-index: 10;
+        }
+        
+        .img_menu_filtro {
+            width: 50%;
+            /*              margin-left: 25%;*/
+            display: inline-block;
+            padding: 10px;
+        }
+        
+        .filter {
+            text-align: center;
+            list-style: none;
+            padding: 0;
+            margin: 0 0 70px;
+            display: inline-block;
+        }
+        
+        .filter > li {
+            text-align: center;
+            display: inline-block;
+            padding: 0 5px 10px;
+            margin: 0 25px;
+            width: 8%;
+        }
+        
+        .filter > li > a {
+            text-align: center;
+        }
+        
+        #logoTop {
+            width: 80px;
+            height: 80px;
+            background-image: url(assets/images/logo/Logocfundo1.svg);
+            background-size: cover;
+            position: relative;
+            float: left;
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        .recuo {
+            margin-left: 2em;
+        }
+        
+        @media (min-width: 768px) {
+            #works-grid > li {
+                width: 10% !important;
             }
-          .sliderG label {
-/*
-              background-color: #000;
-              bottom: 10px;
-              cursor: pointer;
+        }
+        
+        @media (max-width: 767px) {
+            #works-grid > li {
+                width: 33% !important;
+            }
+            .img_menu_filtro {
+                width: 80%;
+                /*              margin-left: 25%;*/
+                display: inline-block;
+                padding: 10px;
+            }
+            .filter > li {
+                text-align: center;
+                display: inline-block;
+                padding: 0 10px 10px;
+                margin: 0 30px;
+                width: 20%;
+            }
+            .quadroItensE {
+                height: 280px !important;
+                margin: 0px 0px 10px 0px !important;
+                padding: 0px !important;
+            }
+            .quadroItensC {
+                height: 240px !important;
+                margin: 0px 0px 0px 0px !important;
+                padding: 0px !important;
+            }
+            .quadroItensCtop {
+                height: 220px !important;
+                margin: 0px 0px 10px 0px !important;
+                padding: 0px !important;
+            }
+            .quadroItensD {
+                height: 280px !important;
+                margin: 0px 0px 10px 0px !important;
+                padding: 0px !important;
+            }
+            .quadroItensV {
+                height: 280px !important;
+                margin: 0px 0px 10px 0px !important;
+                padding: 0px !important;
+            }
+            .alinhamento_video {
+                text-align: center !important;
+                padding-top: 20%;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            #logoTop {
+                width: 90px !important;
+                height: 80px!important;
+                background-image: url(assets/images/logo/Logocfundo1.png)!important;
+                background-size: 90px 80px;
+                /*
+                position: relative!important;
+                float: left!important;
 */
-              display: none;
-/*
-              height: 10px;
-              position: absolute;
-              width: 10px;
-              z-index: 10;
+                padding: 0px!important;
+                margin: 15px!important;
+            }
+        }
+        
+        .quadroItensE {
+            height: 200px;
+            margin: 0px 0px 10px 0px;
+            padding: 8px;
+            background-color: rgba(43, 43, 43, 0.2);
+            background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.9) 50%, rgba(43, 43, 43, 0.1));
+            border: 2px solid rgba(43, 43, 43, 0.8);
+            border-radius: 10px 40px 10px 40px;
+        }
+        
+        .quadroItensC {
+            height: 200px;
+            margin: 0px 0px 10px 0px;
+            padding: 8px;
+            background-color: rgba(43, 43, 43, 0.2);
+            border: 2px solid rgba(43, 43, 43, 0.8);
+            border-radius: 40px 40px 10px 10px;
+        }
+        
+        .quadroItensCtop {
+            height: 200px;
+            margin: 0px 0px 10px 0px;
+            padding: 8px;
+            background-color: rgba(43, 43, 43, 0.2);
+            background-image: linear-gradient( 0deg, rgba(255, 255, 255, 0.9) 50%, rgba(43, 43, 43, 0.1));
+            border: 2px solid rgba(43, 43, 43, 0.8);
+            border-radius: 40px 40px 10px 10px;
+        }
+        
+        .quadroItensCbody {
+            height: 800px;
+            margin: 10px 0px 10px 0px;
+            padding: 8px;
+            background-color: rgba(200, 200, 200, 0.01);
+            border: 2px solid rgba(43, 43, 43, 0.5);
+            border-radius: 40px 40px 10px 10px;
+        }
+        
+        .quadroItensCbody img {
+            margin-top: 80px;
+            height: 600px;
+            /*              margin: 3vmin 4%;*/
+        }
+        
+        .quadroItensD {
+            height: 200px;
+            margin: 0px 0px 10px 0px;
+            padding: 8px;
+            background-color: rgba(43, 43, 43, 0.2);
+            background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.9) 50%, rgba(43, 43, 43, 0.1));
+            border: 2px solid rgba(43, 43, 43, 0.8);
+            border-radius: 40px 10px 40px 10px;
+        }
+        
+        .quadroItensV {
+            height: 200px;
+            margin: 0px 0px 10px 0px;
+            padding: 8px;
+            background-color: rgba(255, 255, 255, 0.01);
+            background: transparent;
+            border: 0px solid rgba(43, 43, 43, 0.8);
+            border-radius: 10px 40px 10px 40px;
+        }
+        
+        .itemPecas {
+            padding: 10px;
+        }
+        
+        .paddzero {
+            padding: 0px !important;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        
+        .padd150 {
+            margin-top: 50px;
+            padding-bottom: 150px;
+            padding-top: 120px;
+            background-color: rgba(43, 43, 43, 0.7);
+            border: 3px solid rgba(43, 43, 43, 1);
+            border-radius: 10px 50px 50px 10px;
+        }
+        
+        .alinhamento_video {
+            text-align: left !important;
+            padding-top: 20%;
+        }
+        
+        .alinhamento_left {
+            text-align: left !important;
+            padding-top: 20%;
+        }
+        
+        .alinhamento_right {
+            text-align: right !important;
+            padding-top: 20%;
+        }
+        /*
+          #works-grid > li{
+              width: 10% !important;
+          }
 */
-          }
-          .sliderG li:nth-child(1) label {
-              left: 30px;
-          }
-          .sliderG li:nth-child(2) label {
-              left: 120px;
-          }
-          .sliderG li:nth-child(3) label {
-              left: 210px;
-          } 
-          .sliderG img {
-              opacity: 0;
-              visibility: hidden;
-          }
-          .sliderG li input:checked ~ img {
-              opacity: 1;
-              visibility: visible;
-              z-index: 10;
-          } 
-          
-          .img_menu_filtro{
-/*              width: calc(100% / 16);*/
-              display: inline-block;
-          }
-          .filter {
-  text-align: center;
-  list-style: none;
-  padding: 0;
-  margin: 0 0 70px;
-    display: inline-block;
-}
+    </style>
+</head>
 
-.filter > li {
-  display: inline-block;
-  padding: 0 0 10px;
-  margin: 0 25px;
-  width: calc(100% / 16);
-}
-
-      </style>
-  </head>
-  <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
-     
+<body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
     <main>
-      <div class="page-loader">
-        <div class="loader">Carregando...</div>
-      </div>
-      <nav class="navbar navbar-custom navbar-fixed-top navbar-transparent" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-              <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="index.html">Check Var</a>
-          </div>
-          <div class="collapse navbar-collapse" id="custom-collapse">
-            <ul class="nav navbar-nav navbar-right">
-              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Inicio</a>
-                <ul class="dropdown-menu">
-                  <li><a href="index_mp_fullscreen_video_background.html">Default</a></li>
-                  <li><a href="index_op_fullscreen_gradient_overlay.html">One Page</a></li>
-                  <li><a href="index_agency.html">Agency</a></li>
-                  <li><a href="index_portfolio.html">Portfolio</a></li>
-                  <li><a href="index_restaurant.html">Restaurant</a></li>
-                  <li><a href="index_finance.html">Finance</a></li>
-                  <li><a href="index_landing.html">Landing Page</a></li>
-                  <li><a href="index_photography.html">Photography</a></li>
-                  <li><a href="index_shop.html">Shop</a></li>
-                </ul>
-              </li>
-              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Headers</a>
-                <ul class="dropdown-menu">
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Static Image Header</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="index_mp_fullscreen_static.html">Fulscreen</a></li>
-                      <li><a href="index_mp_classic_static.html">Classic</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Flexslider Header</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="index_mp_fullscreen_flexslider.html">Fulscreen</a></li>
-                      <li><a href="index_mp_classic_flexslider.html">Classic</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Video Background Header</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="index_mp_fullscreen_video_background.html">Fulscreen</a></li>
-                      <li><a href="index_mp_classic_video_background.html">Classic</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Text Rotator Header</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="index_mp_fullscreen_text_rotator.html">Fulscreen</a></li>
-                      <li><a href="index_mp_classic_text_rotator.html">Classic</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Gradient Overlay Header</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="index_mp_fullscreen_gradient_overlay.html">Fulscreen</a></li>
-                      <li><a href="index_mp_classic_gradient_overlay.html">Classic</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Pages</a>
-                <ul class="dropdown-menu">
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">About</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="about1.html">About 1</a></li>
-                      <li><a href="about2.html">About 2</a></li>
-                      <li><a href="about3.html">About 3</a></li>
-                      <li><a href="about4.html">About 4</a></li>
-                      <li><a href="about5.html">About 5</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Services</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="service1.html">Service 1</a></li>
-                      <li><a href="service2.html">Service 2</a></li>
-                      <li><a href="service3.html">Service 3</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Pricing</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="pricing1.html">Pricing 1</a></li>
-                      <li><a href="pricing2.html">Pricing 2</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Gallery</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="gallery_col_2.html">2 Columns</a></li>
-                      <li><a href="gallery_col_3.html">3 Columns</a></li>
-                      <li><a href="gallery_col_4.html">4 Columns</a></li>
-                      <li><a href="gallery_col_6.html">6 Columns</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Contact</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="contact1.html">Contact 1</a></li>
-                      <li><a href="contact2.html">Contact 2</a></li>
-                      <li><a href="contact3.html">Contact 3</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Restaurant menu</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="restaurant_menu1.html">Menu 2 Columns</a></li>
-                      <li><a href="restaurant_menu2.html">Menu 3 Columns</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="login_register.html">Login / Register</a></li>
-                  <li><a href="faq.html">FAQ</a></li>
-                  <li><a href="404.html">Page 404</a></li>
-                </ul>
-              </li>
-              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Portfolio</a>
-                <ul class="dropdown-menu" role="menu">
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Boxed</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="portfolio_boxed_col_2.html">2 Columns</a></li>
-                      <li><a href="portfolio_boxed_col_3.html">3 Columns</a></li>
-                      <li><a href="portfolio_boxed_col_4.html">4 Columns</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Boxed - Gutter</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="portfolio_boxed_gutter_col_2.html">2 Columns</a></li>
-                      <li><a href="portfolio_boxed_gutter_col_3.html">3 Columns</a></li>
-                      <li><a href="portfolio_boxed_gutter_col_4.html">4 Columns</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Full Width</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="portfolio_full_width_col_2.html">2 Columns</a></li>
-                      <li><a href="portfolio_full_width_col_3.html">3 Columns</a></li>
-                      <li><a href="portfolio_full_width_col_4.html">4 Columns</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Full Width - Gutter</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="portfolio_full_width_gutter_col_2.html">2 Columns</a></li>
-                      <li><a href="portfolio_full_width_gutter_col_3.html">3 Columns</a></li>
-                      <li><a href="portfolio_full_width_gutter_col_4.html">4 Columns</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Masonry</a>
-                    <ul class="dropdown-menu">
-                      <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Boxed</a>
-                        <ul class="dropdown-menu">
-                          <li><a href="portfolio_masonry_boxed_col_2.html">2 Columns</a></li>
-                          <li><a href="portfolio_masonry_boxed_col_3.html">3 Columns</a></li>
-                          <li><a href="portfolio_masonry_boxed_col_4.html">4 Columns</a></li>
-                        </ul>
-                      </li>
-                      <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Full Width</a>
-                        <ul class="dropdown-menu">
-                          <li><a href="portfolio_masonry_full_width_col_2.html">2 Columns</a></li>
-                          <li><a href="portfolio_masonry_full_width_col_3.html">3 Columns</a></li>
-                          <li><a href="portfolio_masonry_full_width_col_4.html">4 Columns</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Hover Style</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="portfolio_hover_black.html">Black</a></li>
-                      <li><a href="portfolio_hover_gradient.html">Gradient</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Single</a>
-                    <ul class="dropdown-menu">
-                      <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Featured Image</a>
-                        <ul class="dropdown-menu">
-                          <li><a href="portfolio_single_featured_image1.html">Style 1</a></li>
-                          <li><a href="portfolio_single_featured_image2.html">Style 2</a></li>
-                        </ul>
-                      </li>
-                      <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Featured Slider</a>
-                        <ul class="dropdown-menu">
-                          <li><a href="portfolio_single_featured_slider1.html">Style 1</a></li>
-                          <li><a href="portfolio_single_featured_slider2.html">Style 2</a></li>
-                        </ul>
-                      </li>
-                      <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Featured Video</a>
-                        <ul class="dropdown-menu">
-                          <li><a href="portfolio_single_featured_video1.html">Style 1</a></li>
-                          <li><a href="portfolio_single_featured_video2.html">Style 2</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Blog</a>
-                <ul class="dropdown-menu" role="menu">
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Standard</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="blog_standard_left_sidebar.html">Left Sidebar</a></li>
-                      <li><a href="blog_standard_right_sidebar.html">Right Sidebar</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Grid</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="blog_grid_col_2.html">2 Columns</a></li>
-                      <li><a href="blog_grid_col_3.html">3 Columns</a></li>
-                      <li><a href="blog_grid_col_4.html">4 Columns</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Masonry</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="blog_grid_masonry_col_2.html">2 Columns</a></li>
-                      <li><a href="blog_grid_masonry_col_3.html">3 Columns</a></li>
-                      <li><a href="blog_grid_masonry_col_4.html">4 Columns</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Single</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="blog_single_left_sidebar.html">Left Sidebar</a></li>
-                      <li><a href="blog_single_right_sidebar.html">Right Sidebar</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Features</a>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="alerts-and-wells.html"><i class="fa fa-bolt"></i> Alerts and Wells</a></li>
-                  <li><a href="buttons.html"><i class="fa fa-link fa-sm"></i> Buttons</a></li>
-                  <li><a href="tabs_and_accordions.html"><i class="fa fa-tasks"></i> Tabs &amp; Accordions</a></li>
-                  <li><a href="content_box.html"><i class="fa fa-list-alt"></i> Contents Box</a></li>
-                  <li><a href="forms.html"><i class="fa fa-check-square-o"></i> Forms</a></li>
-                  <li><a href="icons.html"><i class="fa fa-star"></i> Icons</a></li>
-                  <li><a href="progress-bars.html"><i class="fa fa-server"></i> Progress Bars</a></li>
-                  <li><a href="typography.html"><i class="fa fa-font"></i> Typography</a></li>
-                </ul>
-              </li>
-              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Shop</a>
-                <ul class="dropdown-menu" role="menu">
-                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Product</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="shop_product_col_3.html">3 columns</a></li>
-                      <li><a href="shop_product_col_4.html">4 columns</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="shop_single_product.html">Single Product</a></li>
-                  <li><a href="shop_checkout.html">Checkout</a></li>
-                </ul>
-              </li>
-              <!--li.dropdown.navbar-cart-->
-              <!--    a.dropdown-toggle(href='#', data-toggle='dropdown')-->
-              <!--        span.icon-basket-->
-              <!--        |-->
-              <!--        span.cart-item-number 2-->
-              <!--    ul.dropdown-menu.cart-list(role='menu')-->
-              <!--        li-->
-              <!--            .navbar-cart-item.clearfix-->
-              <!--                .navbar-cart-img-->
-              <!--                    a(href='#')-->
-              <!--                        img(src='assets/images/shop/product-9.jpg', alt='')-->
-              <!--                .navbar-cart-title-->
-              <!--                    a(href='#') Short striped sweater-->
-              <!--                    |-->
-              <!--                    span.cart-amount 2 &times; $119.00-->
-              <!--                    br-->
-              <!--                    |-->
-              <!--                    strong.cart-amount $238.00-->
-              <!--        li-->
-              <!--            .navbar-cart-item.clearfix-->
-              <!--                .navbar-cart-img-->
-              <!--                    a(href='#')-->
-              <!--                        img(src='assets/images/shop/product-10.jpg', alt='')-->
-              <!--                .navbar-cart-title-->
-              <!--                    a(href='#') Colored jewel rings-->
-              <!--                    |-->
-              <!--                    span.cart-amount 2 &times; $119.00-->
-              <!--                    br-->
-              <!--                    |-->
-              <!--                    strong.cart-amount $238.00-->
-              <!--        li-->
-              <!--            .clearfix-->
-              <!--                .cart-sub-totle-->
-              <!--                    strong Total: $476.00-->
-              <!--        li-->
-              <!--            .clearfix-->
-              <!--                a.btn.btn-block.btn-round.btn-font-w(type='submit') Checkout-->
-              <!--li.dropdown-->
-              <!--    a.dropdown-toggle(href='#', data-toggle='dropdown') Search-->
-              <!--    ul.dropdown-menu(role='menu')-->
-              <!--        li-->
-              <!--            .dropdown-search-->
-              <!--                form(role='form')-->
-              <!--                    input.form-control(type='text', placeholder='Search...')-->
-              <!--                    |-->
-              <!--                    button.search-btn(type='submit')-->
-              <!--                        i.fa.fa-search-->
-              <li class="dropdown"><a class="dropdown-toggle" href="documentation.html" data-toggle="dropdown">Documentation</a>
-                <ul class="dropdown-menu">
-                  <li><a href="documentation.html#contact">Contact Form</a></li>
-                  <li><a href="documentation.html#reservation">Reservation Form</a></li>
-                  <li><a href="documentation.html#mailchimp">Mailchimp</a></li>
-                  <li><a href="documentation.html#gmap">Google Map</a></li>
-                  <li><a href="documentation.html#plugin">Plugins</a></li>
-                  <li><a href="documentation.html#changelog">Changelog</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+        <div class="page-loader">
+            <div class="loader">Carregando...</div>
         </div>
-      </nav>
-      <section class="home-section home-parallax home-fade home-full-height bg-dark-60" id="home" data-background="assets/images/secao_2.jpg">
-        <div class="titan-caption">
-          <div class="caption-content">
-            <div class="font-alt mb-40 titan-title-size-2">
-                A manutenção preventiva no seu veículo
+        <!--
+    MENU PRINCIPAL
+    **************
+-->
+        <nav class="navbar navbar-custom navbar-fixed-top navbar-transparent" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                    <a class="navbar-brand" href="index.html" id="logoTop"> </a>
+                </div>
+                <div class="collapse navbar-collapse" id="custom-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#home">INÍCIO</a></li>
+                        <li><a href="#nos">CHECKUP</a></li>
+                        <li><a href="#vantagens">VANTAGENS</a></li>
+                        <li><a href="#works_b">ITENS</a></li>
+                        <li><a href="#fxpreta">QUANTO TEMPO</a></li>
+                        <li><a href="#olhaquemestafalando">OPINIÕES</a></li>
+                        <li><a href="#team">RESPONSÁVEIS</a></li>
+                        <li><a href="#contact">CONTATO</a></li>
+                        <li><a href="investimento.html#invest">INVESTIMENTO</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="font-alt mb-40 titan-title-size-4">
-                <span class="rotate">
+        </nav>
+        <!--
+    CABEÇALHO
+    *********
+-->
+        <section class="home-section home-parallax home-fade home-full-height bg-dark-60" id="home" data-background="assets/images/secao_2.jpg">
+            <div class="titan-caption">
+                <div class="caption-content">
+                    <div class="font-alt mt-sm-80 mb-80 titan-title-size-1 cor_tom_amarelo"> CheckVar, uma forma de controlar e acompanhar o desgaste de seu veículo,
+                        <br>ajudando-o a programar manutenções preventivas periódicas. </div>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="font-alt mb-40 mt-sm-80 titan-title-size-2 cor_tom_cinza_claro"> A manutenção preventiva no seu veículo </div>
+                    <div class="font-alt mt-sm-80 mb-80 titan-title-size-4 cor_tom_cinza"> <span class="rotate">
+                            Maior segurança no trânsito | Diminui a emissão de poluentes | Reduz o cosumo de combustível
+                        </span> </div>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="font-alt mt-sm-80 mb-20 titan-title-size-1 cor_tom_amarelo"> Atuando preventivamente, os gastos com peças e manutenção do veículo são bem menores, além da economia de combustível.
+                        <!--<span class="rotate">
                     Garante maior segurança no trânsito | Diminui a emissão de poluentes | Reduz o cosumo de combustível
-                </span>
+                </span>--></div>
+                </div>
             </div>
-          </div>
-        </div>
-      </section>
-        <section class="module pb-0 parallax-bg bg-dark-60" data-background="assets/images/secao_3.jpg">              
-          <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-6">
-                    <ul class="sliderG">
-                        <li>
-                            <input type="radio" id="slide1" name="slideG" checked>
-                            <label for="slide1"></label>
-                           <img src="assets/images/mks/mks_ckVar_1.png" />
-                        </li>
-                        <li>
-                            <input type="radio" id="slide2" name="slideG">
-                            <label for="slide2"></label>
-                           <img src="assets/images/mks/mks_ckVar_2.png" />
-                        </li>
-                        <li>
-                            <input type="radio" id="slide3" name="slideG">
-                            <label for="slide3"></label>
-                           <img src="assets/images/mks/mks_ckVar_3.png" />
-                        </li>
-                 </ul>
+        </section>
+        <!--
+    SECAO SLIDES
+    ************
+-->
+        <section class="module pb-0 parallax-bg bg-dark-30 wow fadeInUp" onclick="wow fadeInUp" data-background="assets/images/secao_3.jpg" id="nos">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6">
+                        <ul class="sliderG">
+                            <li>
+                                <input type="radio" id="slide1" name="slideG" checked>
+                                <label for="slide1"></label> <img src="assets/images/mks/slide_iphone_1.png" /> </li>
+                            <li>
+                                <input type="radio" id="slide2" name="slideG">
+                                <label for="slide2"></label> <img src="assets/images/mks/slide_iphone_2.png" /> </li>
+                            <li>
+                                <input type="radio" id="slide3" name="slideG">
+                                <label for="slide3"></label> <img src="assets/images/mks/slide_iphone_3.png" /> </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-5 gamba">
+                        <br>
+                        <h2 class="module-title font-alt align-left">CHECKVAR</h2>
+                        <p class="module-subtitle align-left">Independente da marca ou da categoria, é sempre importante acompanhar a manutenção preventiva do seu carro, com atenção aos itens que exigem a troca periódica. A principal razão é que a falha em manter esses componentes em boas condições pode levar a problemas mecânicos graves – e caros, ao até mesmo a acidentes fatais. Por isso criamos a CheckVar, a plataforma que lhe avisa quando está na hora de fazer a manutenção preventiva do seu veículo! </p>
+                        <p></p>
+                    </div>
                 </div>
-              <div class="col-xs-12 col-sm-12 col-md-5 gamba" >
-                  <br>
-                <h2 class="module-title font-alt align-left">Check Var</h2>
-                <p class="module-subtitle font-serif align-left">Aqui você encontra e organiza sua agenda de checkups e manutenções, localiza oficinas mecânicas, economiza tempo e dinheiro além de um atendimento personalizado e com toda a segurança que você precisa.<br>Tudo isso em um único lugar!!</p>
-                <p></p>
-              </div>
-            </div>
-            <div class="row gamba">
-                <div class="col-xs-12 col-sm-12 col-md-6 gamba">
-                    <h2 class="module-title font-alt align-left">Fique sempre por dentro</h2>
-                    <p class="module-subtitle font-serif align-left">A informação da real situação de seu carro é fundamental quanto a segurança, tendo em vista as vidas que nele são confiadas!<br>Mantenha a constante observação na situação do seu carro através do nosso sistema de alerta de necessidades e prioridades.</p>
-                    <p></p>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-6" style="margin-bottom: 10vh;">
-                    <ul class="sliderG">
-                        <li>
-                            <input type="radio" id="slide4" name="slideG2" checked>
-                            <label for="slide4"></label>
-                           <img src="assets/images/mks/mks_ckVar_4.png" />
-                        </li>
-                        <li>
-                            <input type="radio" id="slide5" name="slideG2">
-                            <label for="slide5"></label>
-                            <img src="assets/images/family.jpg" />                           
-                        </li>
-                        <li>
-                            <input type="radio" id="slide6" name="slideG2">
-                            <label for="slide6"></label>
-                           <img src="assets/images/mks/mks_ckVar_6.png" />
-                        </li>
-                        <li>
-                            <input type="radio" id="slide7" name="slideG2">
-                            <label for="slide7"></label>
-                           <img src="assets/images/mks/mks_ckVar_7.png" />
-                        </li>
-                        <li class="gamba">
-                            <input type="radio" id="slide8" name="slideG2">
-                            <label for="slide8"></label>
-                           <img src="assets/images/raioXcarro.png" />
-                        </li>
-                        <li>
-                            <input type="radio" id="slide9" name="slideG2">
-                            <label for="slide9"></label>
-                            <img src="assets/images/mks/mks_ckVar_5.png" />
-                        </li>
-                 </ul>
-                </div>
-<!--
+                <div class="row gamba">
+                    <div class="col-xs-12 col-sm-12 col-md-6 gamba">
+                        <h2 class="module-title font-alt align-left">MANUTENÇÃO PREVENTIVA:<br>ECONOMIA GARANTIDA!</h2>
+                        <p class="module-subtitle align-left">A manutenção preventiva é fundamental para manter o veículo em boas condições de funcionamento, evitando que o carro quebre e precise de uma manutenção corretiva, ou seja, um serviço de conserto de componentes que se danificaram. Lembre-se: quando seu carro quebra inesperadamente, sempre é mais caro.
+                            <br>
+                            <br>Muitos componentes e peças vão se degradando com o uso, de acordo com a quilometragem do veículo, como óleo do motor e filtro de ar. Por isso, com eles, não tem escolha: quando for alcançado o período ou a quilometragem indicada, é preciso fazer a substituição. Já a vida útil de outras peças, como embreagens, pneus e freios, por exemplo, depende da forma como o veículo é conduzido pelo motorista e dos cuidados que este tem com o automóvel, pois sua degradação é difícil de prever sem a realização do checkup. Por isso, é necessário conferir seu estado com periodicidade, substituindo as peças quando a inspeção mostrar que o componente perdeu suas características originais.
+                            <!--
+                            <br>
+<br>Pensando em nossos usuários, a CheckVar efetua cotações das peças em dezenas de distribuidoras de todo o Brasil, gerando uma economia substancial, com peças de comprovada qualidade e procedência.
+-->
+                        </p>
+                        <p></p>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 gamba" style="margin-bottom: 10vh;">
+                        <ul class="sliderG">
+                            <li>
+                                <input type="radio" id="slide4" name="slideG2" checked>
+                                <label for="slide4"></label> <img src="assets/images/mks/slide_iphone_3.png" /> </li>
+                            <li>
+                                <input type="radio" id="slide5" name="slideG2">
+                                <label for="slide5"></label> <img src="assets/images/mks/slide_iphone_1.png" /> </li>
+                            <li>
+                                <input type="radio" id="slide6" name="slideG2">
+                                <label for="slide6"></label> <img src="assets/images/mks/slide_iphone_2.png" /> </li>
+                            <!--
+                            <li>
+                                <input type="radio" id="slide7" name="slideG2">
+                                <label for="slide7"></label> <img src="assets/images/mks/mks_ckVar_7.png" /> </li>
+                            <li class="gamba">
+                                <input type="radio" id="slide8" name="slideG2">
+                                <label for="slide8"></label> <img src="assets/images/raioXcarro.png" /> </li>
+                            <li>
+                                <input type="radio" id="slide9" name="slideG2">
+                                <label for="slide9"></label> <img src="assets/images/mks/mks_ckVar_5.png" /> </li>
+-->
+                        </ul>
+                    </div>
+                    <!--
               <div class="col-sm-3 col-sm-push-3"><img  src="assets/images/mockupInicio.png" alt=""></div>
               <div class="col-sm-3 col-sm-push-3"><img src="assets/images/mockupInicio.png" alt=""></div>
               <div class="col-sm-6 col-sm-pull-6">
                 <h2 class="module-title font-alt align-left">Fique sempre por dentro</h2>
                 <p class="module-subtitle font-serif align-left">A informação da real situação de seu carro é fundamental quanto a segurança, tendo em vista as vidas que nele são confiadas!<br>Mantenha a constante observação na situação do seu carro através do nosso sistema de alerta de necessidades e prioridades.</p>
--->
-              </div> 
-              </div>
+--></div>
+            </div>
         </section>
         <hr class="divider-w">
-<!--
-        <section class="module bg-dark-90" data-background="assets/images/especial.jpg">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="video-box">
-                    <div class="video-title font-alt">
-                        Visão do Especialista
+        <!--
+    VIDEO EXPLICATIVO
+    *****************
+-->
+        <section class="module bg-dark-60 wow fadeInUp" onclick="wow fadeInUp" data-background="assets/images/especial.jpg" id="vantagens">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="video-box">
+                            <div class="video-title font-alt"> VANTAGENS DA MANUTENÇÃO PREVENTIVA DO SEU CARRO EM DIA: </div>
+                            <div class="col-sm-12 col-md-5">
+                                <div class="video-title_2 font-alt alinhamento_video">
+                                    <div class="hidden-xs col-sm-1"><i class="fas fa-circle"></i></div> <div class="col-xs-12 col-sm-11 align-left">Mais segurança</div>
+                                    <br>
+                                    <br>
+                                    <div class="hidden-xs col-sm-1"><i class="fas fa-circle"></i></div> <div class="col-xs-12 col-sm-11 align-left">Garantia assegurada</div>
+                                    <br>
+                                    <br>
+                                    <div class="hidden-xs col-sm-1"><i class="fas fa-circle"></i></div> <div class="col-xs-12 col-sm-11 align-left">Menos custos</div>
+                                    <br>
+                                    <br>
+                                    <div class="hidden-xs col-sm-1"><i class="fas fa-circle"></i></div> <div class="col-xs-12 col-sm-11 align-left">Alívio no seguro</div>
+                                    <br>
+                                    <br>
+                                    <div class="hidden-xs col-sm-1"><i class="fas fa-circle"></i></div> <div class="col-xs-12 col-sm-11 align-left">Mais conforto e satisfação</div>
+                                    <br>
+                                    <br>
+                                    <div class="hidden-xs col-sm-1"><i class="fas fa-circle"></i></div> <div class="col-xs-12 col-sm-11 align-left">Proteção contra desvalorização do veículo</div>
+                                    <br>
+                                    <br> </div>
+                            </div>
+                            <div class="col-sm-12 col-md-7">
+                                <!--
+                                <br>
+                                <br>
+                                <br>
+-->
+                                <iframe class="vd_youtube" src="https://www.youtube-nocookie.com/embed/I9dYNl3z4lQ?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
                     </div>
-                    <div class="video-subtitle font-alt">
-                        Assista a opinião do especialista de muitos anos de experiência em manutenção, restauração e assistência automotiva.
-                    </div><br><br><br>
-                    <iframe class="vd_youtube" src="https://www.youtube-nocookie.com/embed/I9dYNl3z4lQ?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-              </div>
             </div>
-          </div>
         </section>
-        <hr class="divider-w">  
+        <hr class="divider-w">
+        <!--
+    SECAO ITENS
+    ***********
 -->
-          
-<!--
-        <section class="module bg-light bg-dark-30">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-6 col-sm-offset-3">
-                <h2 class="module-title font-alt">Our clients</h2>
-                <div class="module-subtitle font-serif">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</div>
-              </div>
+        <section class="module pb-100 bg-light wow fadeInUp" onclick="wow fadeInUp" id="works_b">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                        <br>
+                        <h2 class="module-title font-alt align-left">Quais itens são verificados na manutenção preventiva?</h2> </div>
+                    <div class="col-sm-12 ">
+                        <div class="alt-services-image align-center"><img src="assets/images/carro_itens.png" alt="Itens da Revisão"></div>
+                    </div>
+                </div>
             </div>
-            <div class="row client">
-              <div class="owl-carousel text-center" data-items="5" data-pagination="true" data-navigation="false">
-                <div class="owl-item">
-                  <div class="col-sm-12">
-                    <div class="client-logo"><img src="assets/images/client-logo-dark-1.png" alt="Client Logo"/></div>
-                  </div>
+            <br>
+            <br>
+            <br> </section>
+        <!--
+    SECAO QUANTO TEMPO
+    *****************
+-->
+        <section class="module pb-30 pt-140 bg-dark wow fadeInUp" onclick="wow fadeInUp" id="fxpreta">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+                        <div class="callout-text font-alt align-left">
+                            <h3 class="callout-title">De quanto em quanto tempo devo fazer a manutenção preventiva?</h3>
+                            <br>
+                            <p> Basicamente, não existe uma data específica para realizar a manutenção preventiva de seu carro, pois tudo depende da marca e do modelo. Como regra geral, porém, recomendamos que ela seja feita a cada seis meses ou a cada dez mil quilômetros – o que vier primeiro.</p>
+                            <p> Além disso, se seu automóvel foi retirado zero quilômetro da concessionária, você precisa ficar atento às revisões obrigatórias. Carros seminovos que passaram por todas as revisões obrigatórias de concessionária, também devem ser levados periodicamente a um mecânico de confiança. </p>
+                            <p> É importante lembrar ainda que seu estilo de direção e situações às quais o carro é exposto contribuem para reduzir os intervalos entre as manutenções. Enfrentar muita poeira, estradas esburacadas, ficar parado em congestionamentos por muito tempo ou viver em locais onde a alta temperatura é comum podem exigir fazer a manutenção preventiva antes. Em Caso de colisão ou alguma avaria, agende um checkup o mais rápido possível.</p>
+                            <p> O check-up completo não chega a 45 minutos e ajuda a evitar problemas futuros.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="owl-item">
-                  <div class="col-sm-12">
-                    <div class="client-logo"><img src="assets/images/client-logo-dark-2.png" alt="Client Logo"/></div>
-                  </div>
-                </div>
-                <div class="owl-item">
-                  <div class="col-sm-12">
-                    <div class="client-logo"><img src="assets/images/client-logo-dark-3.png" alt="Client Logo"/></div>
-                  </div>
-                </div>
-                <div class="owl-item">
-                  <div class="col-sm-12">
-                    <div class="client-logo"><img src="assets/images/client-logo-dark-4.png" alt="Client Logo"/></div>
-                  </div>
-                </div>
-                <div class="owl-item">
-                  <div class="col-sm-12">
-                    <div class="client-logo"><img src="assets/images/client-logo-dark-5.png" alt="Client Logo"/></div>
-                  </div>
-                </div>
-                <div class="owl-item">
-                  <div class="col-sm-12">
-                    <div class="client-logo"><img src="assets/images/client-logo-dark-1.png" alt="Client Logo"/></div>
-                  </div>
-                </div>
-                <div class="owl-item">
-                  <div class="col-sm-12">
-                    <div class="client-logo"><img src="assets/images/client-logo-dark-2.png" alt="Client Logo"/></div>
-                  </div>
-                </div>
-                <div class="owl-item">
-                  <div class="col-sm-12">
-                    <div class="client-logo"><img src="assets/images/client-logo-dark-3.png" alt="Client Logo"/></div>
-                  </div>
-                </div>
-                <div class="owl-item">
-                  <div class="col-sm-12">
-                    <div class="client-logo"><img src="assets/images/client-logo-dark-4.png" alt="Client Logo"/></div>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
-        </section>        
+        </section>
+        <hr class="divider-w">
+        <!--
+    SECAO OLHA QUEM ESTA FALANDO
+    *****************
 -->
-        
-<!--
-        <section class="home-section home-full-height bg-dark-30"  data-background="assets/images/section-5.jpg">
-        <div class="video-player" data-property="{videoURL:'https://www.youtube.com/watch?v=bNucJgetMjE', containment:'.home-section', startAt:18, mute:false, autoPlay:true, loop:true, opacity:1, showControls:false, showYTLogo:false, vol:25}"></div>
-        <div class="video-controls-box">
-          <div class="container">
-            <div class="video-controls"><a class="fa fa-volume-up" id="video-volume" href="#">&nbsp;</a><a class="fa fa-pause" id="video-play" href="#">&nbsp;</a></div>
-          </div>
-        </div>
-        <div class="titan-caption">
-          <div class="caption-content">
-            <div class="font-alt mb-30 titan-title-size-1">Hello &amp; welcome</div>
-            <div class="font-alt mb-40 titan-title-size-4">We are Titan</div>
-              <a class="section-scroll btn btn-border-w btn-round" href="#about">Learn More</a>
-          </div>
-        </div>
-      </section>
--->
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <section class="module pb-0 bg-dark-30" id="works">
-          <div class="container">
-            <div class="row">
-<!--
-              <div class="col-sm-6 col-sm-offset-3">
-                <h2 class="module-title font-alt">Itens do Checkup</h2>
-                <div class="module-subtitle font-serif">Garanta a segurança e a durabilidade dos itens do seu carro!</div>
-              </div>
--->
-                <div class="col-xs-12 col-sm-12 col-md-5 gamba" >
-                  <br>
-                    <h2 class="module-title font-alt align-left">Itens do Checkup</h2>
-                    <p class="module-subtitle font-serif align-left">Garanta a segurança e a durabilidade dos itens do seu carro!</p>
-                    <p></p>
-                </div>
-                <div class="col-sm-8 col-sm-offset-2 col-md-5"><img  src="assets/images/checkupAll.png" alt="">
-                </div>
-                
-            </div>
-          </div>
-          <div class="container">
-            <div class="row gamba">
-              <div class="col-sm-12">
-                <ul class="filter font-alt" id="filters">
-                  <li>
-                      <a class="current wow fadeInUp" href="#" data-filter="*" data-wow-delay="2.9s">
-                          <img src="assets/images/mks/mks_ckVar_1.png" class="img_menu_filtro" />
-                          <spam>TODOS</spam>
-                      </a>
+        <section class="module bg-dark-60 pb-30 pt-50 parallax-bg testimonial wow fadeInUp" onclick="wow fadeInUp" data-background="assets/images/Fundo_degrade_preto.png" id="olhaquemestafalando">
+            <div class="testimonials-slider pt-140 pb-140">
+                <ul class="slides">
+                    <li>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="module-icon"><span class="icon-quote"></span></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-8 col-sm-offset-2">
+                                    <blockquote class="testimonial-text font-alt">A CHECKVAR ME FEZ POUPAR UMA QUANTIA RAZOÁVEL. NUNCA MAIS FAÇO MANUTENÇÃO NO MEU CARRO DE OUTRA FORMA!.</blockquote>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4 col-sm-offset-4">
+                                    <div class="testimonial-author">
+                                        <div class="testimonial-caption font-alt">
+                                            <div class="testimonial-title">RICARDO GIOS </div>
+                                            <div class="testimonial-descr">Audi A3 2017</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </li>
-                  <li>
-                      <a class="wow fadeInUp" href="#" data-filter=".freio" data-wow-delay="1.3s">
-                          <img src="assets/images/mks/mks_ckVar_1.png" class="img_menu_filtro" />
-                          <spam>FREIOS</spam>
-                          
-                      </a>
+                    <li>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="module-icon"><span class="icon-quote"></span></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-8 col-sm-offset-2">
+                                    <blockquote class="testimonial-text font-alt">A FACILIDADE DE ENCONTRAR UMA OFICINA BOA, DE CONFIANÇA, COM ESTE APP, É SENSACIONAL</blockquote>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4 col-sm-offset-4">
+                                    <div class="testimonial-author">
+                                        <div class="testimonial-caption font-alt">
+                                            <div class="testimonial-title">ERIC MARTINS</div>
+                                            <div class="testimonial-descr">Dodge Charger 1972</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </li>
-                  <li>
-                      <a class="wow fadeInUp" href="#" data-filter=".suspensao" data-wow-delay="1.5s">
-                          <img src="assets/images/mks/mks_ckVar_1.png" class="img_menu_filtro" />
-                          <spam>SUSPENSÃO</spam>
-                          
-                      </a>
+                    <li>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="module-icon"><span class="icon-quote"></span></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-8 col-sm-offset-2">
+                                    <blockquote class="testimonial-text font-alt">NADA SUBSTITUI A SENSAÇÃO DE RODAR COM SEU CARRO COM A MANUTENÇÃO EM DIA! SEGURANÇA TOTAL!</blockquote>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4 col-sm-offset-4">
+                                    <div class="testimonial-author">
+                                        <div class="testimonial-caption font-alt">
+                                            <div class="testimonial-title">MIGUEL MOURÃO </div>
+                                            <div class="testimonial-descr">Land Roover Defender 2014</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </li>
-                  <li>
-                      <a class="wow fadeInUp" href="#" data-filter=".arrefecimento" data-wow-delay="1.7s">
-                          <img src="assets/images/mks/mks_ckVar_1.png" class="img_menu_filtro" />
-                          <spam>ARREFECIMENTO</spam>
-                          
-                      </a>
-                    </li>
-                  <li>
-                      <a class="wow fadeInUp" href="#" data-filter=".escapamento" data-wow-delay="1.9">
-                          <img src="assets/images/mks/mks_ckVar_1.png" class="img_menu_filtro" />
-                          <spam>ESCAPAMENTO</spam>
-                          
-                      </a>
-                    </li>
-                  <li>
-                      <a class="wow fadeInUp" href="#" data-filter=".vazamento" data-wow-delay="2.1s">
-                          <img src="assets/images/mks/mks_ckVar_1.png" class="img_menu_filtro" />
-                          <spam>VAZAMENTOS</spam>
-                          
-                      </a>
-                    </li>
-                  <li>
-                      <a class="wow fadeInUp" href="#" data-filter=".motor" data-wow-delay="2.3s">
-                          <img src="assets/images/mks/mks_ckVar_1.png" class="img_menu_filtro" />                          
-                          <spam>MOTOR</spam>
-                          
-                      </a>
-                    </li>
-                  <li>
-                      <a class="wow fadeInUp" href="#" data-filter=".eletrica" data-wow-delay="2.5s">
-                          <img src="assets/images/mks/mks_ckVar_1.png" class="img_menu_filtro" />                          
-                          <spam>ELÉTRICA</spam>
-                          
-                      </a>
+                    <li>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="module-icon"><span class="icon-quote"></span></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-8 col-sm-offset-2">
+                                    <blockquote class="testimonial-text font-alt">A CHECKVAR CUIDA DO MEU CARRO COMO SE FOSSE DELES. ESSE APP É 10!</blockquote>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4 col-sm-offset-4">
+                                    <div class="testimonial-author">
+                                        <div class="testimonial-caption font-alt">
+                                            <div class="testimonial-title">ZECA VIVEIROS</div>
+                                            <div class="testimonial-descr">Mercedes GLA 200 2018</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                 </ul>
-              </div>
             </div>
-          </div>
-          <ul class="works-grid works-grid-5 works-hover-r" id="works-grid">
-              
-            <li class="work-item freio suspensao">
-                <a href="portfolio-single-1.html">
-                    <div class="work-image">
-                        <img src="assets/images/work-1.jpg" alt="Portfolio Item"/>
-                    </div>
-                    <div class="work-caption font-alt">
-                        <h3 class="work-title">Corporate Identity</h3>
-                        <div class="work-descr">Illustration</div>
-                    </div>
-                </a>
-            </li>
-              
-            <li class="work-item freio">
-                <a href="portfolio-single-1.html">
-                    <div class="work-image">
-                        <img src="assets/images/work-1.jpg" alt="Portfolio Item"/>
-                    </div>
-                    <div class="work-caption font-alt">
-                        <h3 class="work-title">Corporate Identity</h3>
-                        <div class="work-descr">Illustration</div>
-                    </div>
-                </a>
-            </li>
-              
-            <li class="work-item freio">
-                <a href="portfolio-single-1.html">
-                    <div class="work-image">
-                        <img src="assets/images/work-1.jpg" alt="Portfolio Item"/>
-                    </div>
-                    <div class="work-caption font-alt">
-                        <h3 class="work-title">Corporate Identity</h3>
-                        <div class="work-descr">Illustration</div>
-                    </div>
-                </a>
-            </li>
-              
-            <li class="work-item freio">
-                <a href="portfolio-single-1.html">
-                    <div class="work-image">
-                        <img src="assets/images/work-1.jpg" alt="Portfolio Item"/>
-                    </div>
-                    <div class="work-caption font-alt">
-                        <h3 class="work-title">Corporate Identity</h3>
-                        <div class="work-descr">Illustration</div>
-                    </div>
-                </a>
-            </li>
-              
-            <li class="work-item freio">
-                <a href="portfolio-single-1.html">
-                    <div class="work-image">
-                        <img src="assets/images/work-1.jpg" alt="Portfolio Item"/>
-                    </div>
-                    <div class="work-caption font-alt">
-                        <h3 class="work-title">Corporate Identity</h3>
-                        <div class="work-descr">Illustration</div>
-                    </div>
-                </a>
-            </li>
-              
-            <li class="work-item suspensao">
-                <a href="portfolio-single-1.html">
-                    <div class="work-image">
-                        <img src="assets/images/work-1.jpg" alt="Portfolio Item"/>
-                    </div>
-                    <div class="work-caption font-alt">
-                        <h3 class="work-title">Corporate Identity</h3>
-                        <div class="work-descr">Illustration</div>
-                    </div>
-                </a>
-            </li>
-              
-            <li class="work-item suspensao freio">
-                <a href="portfolio-single-1.html">
-                    <div class="work-image">
-                        <img src="assets/images/work-1.jpg" alt="Portfolio Item"/>
-                    </div>
-                    <div class="work-caption font-alt">
-                        <h3 class="work-title">Corporate Identity</h3>
-                        <div class="work-descr">Illustration</div>
-                    </div>
-                </a>
-            </li>
-              
-            <li class="work-item suspensao">
-                <a href="portfolio-single-1.html">
-                    <div class="work-image">
-                        <img src="assets/images/work-1.jpg" alt="Portfolio Item"/>
-                    </div>
-                    <div class="work-caption font-alt">
-                        <h3 class="work-title">Corporate Identity</h3>
-                        <div class="work-descr">Illustration</div>
-                    </div>
-                </a>
-            </li>
-              
-            <li class="work-item suspensao">
-                <a href="portfolio-single-1.html">
-                    <div class="work-image">
-                        <img src="assets/images/work-1.jpg" alt="Portfolio Item"/>
-                    </div>
-                    <div class="work-caption font-alt">
-                        <h3 class="work-title">Corporate Identity</h3>
-                        <div class="work-descr">Illustration</div>
-                    </div>
-                </a>
-            </li>
-              
-            <li class="work-item suspensao">
-                <a href="portfolio-single-1.html">
-                    <div class="work-image">
-                        <img src="assets/images/work-1.jpg" alt="Portfolio Item"/>
-                    </div>
-                    <div class="work-caption font-alt">
-                        <h3 class="work-title">Corporate Identity</h3>
-                        <div class="work-descr">Illustration</div>
-                    </div>
-                </a>
-            </li>
-              
-            <li class="work-item arrefecimento suspensao">
-                <a href="portfolio-single-1.html">
-                    <div class="work-image">
-                        <img src="assets/images/work-1.jpg" alt="Portfolio Item"/>
-                    </div>
-                    <div class="work-caption font-alt">
-                        <h3 class="work-title">Corporate Identity</h3>
-                        <div class="work-descr">Illustration</div>
-                    </div>
-                </a>
-            </li>
-              
-            <li class="work-item arrefecimento">
-                <a href="portfolio-single-1.html">
-                    <div class="work-image">
-                        <img src="assets/images/work-1.jpg" alt="Portfolio Item"/>
-                    </div>
-                    <div class="work-caption font-alt">
-                        <h3 class="work-title">Corporate Identity</h3>
-                        <div class="work-descr">Illustration</div>
-                    </div>
-                </a>
-            </li>
-              
-            <li class="work-item arrefecimento freio">
-                <a href="portfolio-single-1.html">
-                    <div class="work-image">
-                        <img src="assets/images/work-1.jpg" alt="Portfolio Item"/>
-                    </div>
-                    <div class="work-caption font-alt">
-                        <h3 class="work-title">Corporate Identity</h3>
-                        <div class="work-descr">Illustration</div>
-                    </div>
-                </a>
-            </li>
-              
-            <li class="work-item arrefecimento">
-                <a href="portfolio-single-1.html">
-                    <div class="work-image">
-                        <img src="assets/images/work-1.jpg" alt="Portfolio Item"/>
-                    </div>
-                    <div class="work-caption font-alt">
-                        <h3 class="work-title">Corporate Identity</h3>
-                        <div class="work-descr">Illustration</div>
-                    </div>
-                </a>
-            </li>
-              
-            <li class="work-item arrefecimento">
-                <a href="portfolio-single-1.html">
-                    <div class="work-image">
-                        <img src="assets/images/work-1.jpg" alt="Portfolio Item"/>
-                    </div>
-                    <div class="work-caption font-alt">
-                        <h3 class="work-title">Corporate Identity</h3>
-                        <div class="work-descr">Illustration</div>
-                    </div>
-                </a>
-            </li>
-              
-            <li class="work-item escapamento suspensao">
-                <a href="portfolio-single-1.html">
-                    <div class="work-image">
-                        <img src="assets/images/work-1.jpg" alt="Portfolio Item"/>
-                    </div>
-                    <div class="work-caption font-alt">
-                        <h3 class="work-title">Corporate Identity</h3>
-                        <div class="work-descr">Illustration</div>
-                    </div>
-                </a>
-            </li>
-              
-            <li class="work-item escapamento">
-                <a href="portfolio-single-1.html">
-                    <div class="work-image">
-                        <img src="assets/images/work-1.jpg" alt="Portfolio Item"/>
-                    </div>
-                    <div class="work-caption font-alt">
-                        <h3 class="work-title">Corporate Identity</h3>
-                        <div class="work-descr">Illustration</div>
-                    </div>
-                </a>
-            </li>
-              
-            <li class="work-item escapamento">
-                <a href="portfolio-single-1.html">
-                    <div class="work-image">
-                        <img src="assets/images/work-1.jpg" alt="Portfolio Item"/>
-                    </div>
-                    <div class="work-caption font-alt">
-                        <h3 class="work-title">Corporate Identity</h3>
-                        <div class="work-descr">Illustration</div>
-                    </div>
-                </a>
-            </li>
-              
-            <li class="work-item escapamento freio">
-                <a href="portfolio-single-1.html">
-                    <div class="work-image">
-                        <img src="assets/images/work-1.jpg" alt="Portfolio Item"/>
-                    </div>
-                    <div class="work-caption font-alt">
-                        <h3 class="work-title">Corporate Identity</h3>
-                        <div class="work-descr">Illustration</div>
-                    </div>
-                </a>
-            </li>
-              
-            <li class="work-item escapamento">
-                <a href="portfolio-single-1.html">
-                    <div class="work-image">
-                        <img src="assets/images/work-1.jpg" alt="Portfolio Item"/>
-                    </div>
-                    <div class="work-caption font-alt">
-                        <h3 class="work-title">Corporate Identity</h3>
-                        <div class="work-descr">Illustration</div>
-                    </div>
-                </a>
-            </li>
-              
-            <li class="work-item vazamento">
-                <a href="portfolio-single-1.html">
-                    <div class="work-image">
-                        <img src="assets/images/work-1.jpg" alt="Portfolio Item"/>
-                    </div>
-                    <div class="work-caption font-alt">
-                        <h3 class="work-title">Corporate Identity</h3>
-                        <div class="work-descr">Illustration</div>
-                    </div>
-                </a>
-            </li>
-              
-            <li class="work-item vazamento suspensao">
-                <a href="portfolio-single-1.html">
-                    <div class="work-image">
-                        <img src="assets/images/work-1.jpg" alt="Portfolio Item"/>
-                    </div>
-                    <div class="work-caption font-alt">
-                        <h3 class="work-title">Corporate Identity</h3>
-                        <div class="work-descr">Illustration</div>
-                    </div>
-                </a>
-            </li>
-              
-            <li class="work-item vazamento">
-                <a href="portfolio-single-1.html">
-                    <div class="work-image">
-                        <img src="assets/images/work-1.jpg" alt="Portfolio Item"/>
-                    </div>
-                    <div class="work-caption font-alt">
-                        <h3 class="work-title">Corporate Identity</h3>
-                        <div class="work-descr">Illustration</div>
-                    </div>
-                </a>
-            </li>
-              
-            <li class="work-item vazamento">
-                <a href="portfolio-single-1.html">
-                    <div class="work-image">
-                        <img src="assets/images/work-1.jpg" alt="Portfolio Item"/>
-                    </div>
-                    <div class="work-caption font-alt">
-                        <h3 class="work-title">Corporate Identity</h3>
-                        <div class="work-descr">Illustration</div>
-                    </div>
-                </a>
-            </li>
-              
-            <li class="work-item vazamento freio">
-                <a href="portfolio-single-1.html">
-                    <div class="work-image">
-                        <img src="assets/images/work-1.jpg" alt="Portfolio Item"/>
-                    </div>
-                    <div class="work-caption font-alt">
-                        <h3 class="work-title">Corporate Identity</h3>
-                        <div class="work-descr">Illustration</div>
-                    </div>
-                </a>
-            </li>
-              
-            <li class="work-item motor freio">
-                <a href="portfolio-single-1.html">
-                    <div class="work-image">
-                        <img src="assets/images/work-1.jpg" alt="Portfolio Item"/>
-                    </div>
-                    <div class="work-caption font-alt">
-                        <h3 class="work-title">Corporate Identity</h3>
-                        <div class="work-descr">Illustration</div>
-                    </div>
-                </a>
-            </li>
-              
-            <li class="work-item motor arrefecimento arrefecimento">
-                <a href="portfolio-single-1.html">
-                    <div class="work-image">
-                        <img src="assets/images/work-1.jpg" alt="Portfolio Item"/>
-                    </div>
-                    <div class="work-caption font-alt">
-                        <h3 class="work-title">Corporate Identity</h3>
-                        <div class="work-descr">Illustration</div>
-                    </div>
-                </a>
-            </li>
-              
-            <li class="work-item motor">
-                <a href="portfolio-single-1.html">
-                    <div class="work-image">
-                        <img src="assets/images/work-1.jpg" alt="Portfolio Item"/>
-                    </div>
-                    <div class="work-caption font-alt">
-                        <h3 class="work-title">Corporate Identity</h3>
-                        <div class="work-descr">Illustration</div>
-                    </div>
-                </a>
-            </li>
-              
-            <li class="work-item motor suspensao">
-                <a href="portfolio-single-1.html">
-                    <div class="work-image">
-                        <img src="assets/images/work-1.jpg" alt="Portfolio Item"/>
-                    </div>
-                    <div class="work-caption font-alt">
-                        <h3 class="work-title">Corporate Identity</h3>
-                        <div class="work-descr">Illustration</div>
-                    </div>
-                </a>
-            </li>
-              
-            <li class="work-item motor">
-                <a href="portfolio-single-1.html">
-                    <div class="work-image">
-                        <img src="assets/images/work-1.jpg" alt="Portfolio Item"/>
-                    </div>
-                    <div class="work-caption font-alt">
-                        <h3 class="work-title">Corporate Identity</h3>
-                        <div class="work-descr">Illustration</div>
-                    </div>
-                </a>
-            </li>
-              
-            <li class="work-item eletrica">
-                <a href="portfolio-single-1.html">
-                    <div class="work-image">
-                        <img src="assets/images/work-1.jpg" alt="Portfolio Item"/>
-                    </div>
-                    <div class="work-caption font-alt">
-                        <h3 class="work-title">Corporate Identity</h3>
-                        <div class="work-descr">Illustration</div>
-                    </div>
-                </a>
-            </li>
-              
-            <li class="work-item eletrica freio arrefecimento">
-                <a href="portfolio-single-1.html">
-                    <div class="work-image">
-                        <img src="assets/images/work-1.jpg" alt="Portfolio Item"/>
-                    </div>
-                    <div class="work-caption font-alt">
-                        <h3 class="work-title">Corporate Identity</h3>
-                        <div class="work-descr">Illustration</div>
-                    </div>
-                </a>
-            </li>
-              
-            <li class="work-item eletrica">
-                <a href="portfolio-single-1.html">
-                    <div class="work-image">
-                        <img src="assets/images/work-1.jpg" alt="Portfolio Item"/>
-                    </div>
-                    <div class="work-caption font-alt">
-                        <h3 class="work-title">Corporate Identity</h3>
-                        <div class="work-descr">Illustration</div>
-                    </div>
-                </a>
-            </li>
-              
-            <li class="work-item eletrica">
-                <a href="portfolio-single-1.html">
-                    <div class="work-image">
-                        <img src="assets/images/work-1.jpg" alt="Portfolio Item"/>
-                    </div>
-                    <div class="work-caption font-alt">
-                        <h3 class="work-title">Corporate Identity</h3>
-                        <div class="work-descr">Illustration</div>
-                    </div>
-                </a>
-            </li>
-              
-            <li class="work-item eletrica">
-                <a href="portfolio-single-1.html">
-                    <div class="work-image">
-                        <img src="assets/images/work-1.jpg" alt="Portfolio Item"/>
-                    </div>
-                    <div class="work-caption font-alt">
-                        <h3 class="work-title">Corporate Identity</h3>
-                        <div class="work-descr">Illustration</div>
-                    </div>
-                </a>
-            </li>
-            
-          </ul>
         </section>
-        <section class="module-small bg-dark">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-6 col-md-8 col-lg-6 col-lg-offset-2">
-                <div class="callout-text font-alt">
-                  <h3 class="callout-title">Want to see more works?</h3>
-                  <p>We are always open to interesting projects.</p>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-4 col-lg-2">
-                <div class="callout-btn-box"><a class="btn btn-w btn-round" href="portfolio_boxed_gutter_col_3.html">Lets view portfolio</a></div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="module" id="alt-features">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-6 col-sm-offset-3">
-                <h2 class="module-title font-alt">Our features</h2>
-                <div class="module-subtitle font-serif">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-6 col-md-3 col-lg-3">
-                <div class="alt-features-item">
-                  <div class="alt-features-icon"><span class="icon-strategy"></span></div>
-                  <h3 class="alt-features-title font-alt">Branding</h3>A wonderful serenity has taken possession of my entire soul like these sweet mornings.
-                </div>
-                <div class="alt-features-item">
-                  <div class="alt-features-icon"><span class="icon-tools-2"></span></div>
-                  <h3 class="alt-features-title font-alt">Development</h3>A wonderful serenity has taken possession of my entire soul like these sweet mornings.
-                </div>
-                <div class="alt-features-item">
-                  <div class="alt-features-icon"><span class="icon-target"></span></div>
-                  <h3 class="alt-features-title font-alt">Marketing</h3>A wonderful serenity has taken possession of my entire soul like these sweet mornings.
-                </div>
-                <div class="alt-features-item">
-                  <div class="alt-features-icon"><span class="icon-tools"></span></div>
-                  <h3 class="alt-features-title font-alt">Design</h3>A wonderful serenity has taken possession of my entire soul like these sweet mornings.
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-6 hidden-xs hidden-sm">
-                <div class="alt-services-image align-center"><img src="assets/images/promo.png" alt="Feature Image"></div>
-              </div>
-              <div class="col-sm-6 col-md-3 col-lg-3">
-                <div class="alt-features-item">
-                  <div class="alt-features-icon"><span class="icon-camera"></span></div>
-                  <h3 class="alt-features-title font-alt">Photography</h3>A wonderful serenity has taken possession of my entire soul like these sweet mornings.
-                </div>
-                <div class="alt-features-item">
-                  <div class="alt-features-icon"><span class="icon-mobile"></span></div>
-                  <h3 class="alt-features-title font-alt">Mobile</h3>A wonderful serenity has taken possession of my entire soul like these sweet mornings.
-                </div>
-                <div class="alt-features-item">
-                  <div class="alt-features-icon"><span class="icon-linegraph"></span></div>
-                  <h3 class="alt-features-title font-alt">Music</h3>A wonderful serenity has taken possession of my entire soul like these sweet mornings.
-                </div>
-                <div class="alt-features-item">
-                  <div class="alt-features-icon"><span class="icon-basket"></span></div>
-                  <h3 class="alt-features-title font-alt">Shop</h3>A wonderful serenity has taken possession of my entire soul like these sweet mornings.
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <hr class="divider-w">
-        <section class="module" id="team">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-6 col-sm-offset-3">
-                <h2 class="module-title font-alt">Meet Our Team</h2>
-                <div class="module-subtitle font-serif">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="mb-sm-20 wow fadeInUp col-sm-6 col-md-3" onclick="wow fadeInUp">
-                <div class="team-item">
-                  <div class="team-image"><img src="assets/images/team-1.jpg" alt="Member Photo"/>
-                    <div class="team-detail">
-                      <h5 class="font-alt">Hi all</h5>
-                      <p class="font-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a&amp;nbsp;iaculis diam.</p>
-                      <div class="team-social"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-dribbble"></i></a><a href="#"><i class="fa fa-skype"></i></a></div>
-                    </div>
-                  </div>
-                  <div class="team-descr font-alt">
-                    <div class="team-name">Jim Stone</div>
-                    <div class="team-role">Art Director</div>
-                  </div>
-                </div>
-              </div>
-              <div class="mb-sm-20 wow fadeInUp col-sm-6 col-md-3" onclick="wow fadeInUp">
-                <div class="team-item">
-                  <div class="team-image"><img src="assets/images/team-2.jpg" alt="Member Photo"/>
-                    <div class="team-detail">
-                      <h5 class="font-alt">Good day</h5>
-                      <p class="font-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a&amp;nbsp;iaculis diam.</p>
-                      <div class="team-social"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-dribbble"></i></a><a href="#"><i class="fa fa-skype"></i></a></div>
-                    </div>
-                  </div>
-                  <div class="team-descr font-alt">
-                    <div class="team-name">Andy River</div>
-                    <div class="team-role">Creative director</div>
-                  </div>
-                </div>
-              </div>
-              <div class="mb-sm-20 wow fadeInUp col-sm-6 col-md-3" onclick="wow fadeInUp">
-                <div class="team-item">
-                  <div class="team-image"><img src="assets/images/team-3.jpg" alt="Member Photo"/>
-                    <div class="team-detail">
-                      <h5 class="font-alt">Hello</h5>
-                      <p class="font-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a&amp;nbsp;iaculis diam.</p>
-                      <div class="team-social"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-dribbble"></i></a><a href="#"><i class="fa fa-skype"></i></a></div>
-                    </div>
-                  </div>
-                  <div class="team-descr font-alt">
-                    <div class="team-name">Adele Snow</div>
-                    <div class="team-role">Account manager</div>
-                  </div>
-                </div>
-              </div>
-              <div class="mb-sm-20 wow fadeInUp col-sm-6 col-md-3" onclick="wow fadeInUp">
-                <div class="team-item">
-                  <div class="team-image"><img src="assets/images/team-4.jpg" alt="Member Photo"/>
-                    <div class="team-detail">
-                      <h5 class="font-alt">Yes, it's me</h5>
-                      <p class="font-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a&amp;nbsp;iaculis diam.</p>
-                      <div class="team-social"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-dribbble"></i></a><a href="#"><i class="fa fa-skype"></i></a></div>
-                    </div>
-                  </div>
-                  <div class="team-descr font-alt">
-                    <div class="team-name">Dylan Woods</div>
-                    <div class="team-role">Developer</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="module bg-dark-60 pt-0 pb-0 parallax-bg testimonial" data-background="assets/images/testimonial_bg.jpg">
-          <div class="testimonials-slider pt-140 pb-140">
-            <ul class="slides">
-              <li>
-                <div class="container">
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <div class="module-icon"><span class="icon-quote"></span></div>
-                    </div>
-                  </div>
-                  <div class="row">
+        <!--
+    SECAO TEAM
+    *****************
+-->
+        <section class="module wow fadeInUp" onclick="wow fadeInUp" id="team">
+            <div class="container">
+                <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                      <blockquote class="testimonial-text font-alt">I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.</blockquote>
+                        <h2 class="module-title font-alt">CONHEÇA NOSSO TIME</h2>
+                        <div class="module-subtitle font-serif">Somos um grupo de pessoas apaixonadas por carros. Como explicar a nossa paixão por carros e automobilismo? Devemos ter um cromossomo movido a gasolina em nossa estrutura, sei lá. Normalmente a paixão vem desde pequeno, basta aquele pequenino incentivo – vindo do seu pai ou do seu avô, na maioria das vezes – e pronto. Esse “vírus” então eclode e te acompanhará pelo resto da sua vida. Ser “maluco” por carros e automobilismo é isso. Ficamos felizes. Aliás, nada mais importa. Apenas isso nos move. Um amor que transcende gerações.</div>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-4 col-sm-offset-4">
-                      <div class="testimonial-author">
-                        <div class="testimonial-caption font-alt">
-                          <div class="testimonial-title">Jack Woods</div>
-                          <div class="testimonial-descr">SomeCompany INC, CEO</div>
+                </div>
+                <div class="row">
+                    <!--                    *****-->
+                    <div class="mb-sm-20 wow fadeInUp col-sm-6 col-md-3" onclick="wow fadeInUp">
+                        <div class="team-item">
+                            <div class="team-image"> <img src="assets/images/varlei.jpeg" alt="Member Photo" /> </div>
+                            <div class="team-descr font-alt">
+                                <div class="team-name">VARLEY</div>
+                                <div class="team-role">DIRETOR TÉCNICO
+                                    <br><a><i class="fa fa-envelope"></i> varley@checkvar.com.br</a></div>
+                            </div>
                         </div>
-                      </div>
                     </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="container">
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <div class="module-icon"><span class="icon-quote"></span></div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-8 col-sm-offset-2">
-                      <blockquote class="testimonial-text font-alt">I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</blockquote>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-4 col-sm-offset-4">
-                      <div class="testimonial-author">
-                        <div class="testimonial-caption font-alt">
-                          <div class="testimonial-title">Jim Stone</div>
-                          <div class="testimonial-descr">SomeCompany INC, CEO</div>
+                    <!--                    *****-->
+                    <div class="mb-sm-20 wow fadeInUp col-sm-6 col-md-3" onclick="wow fadeInUp">
+                        <div class="team-item">
+                            <div class="team-image"> <img src="assets/images/pacheco.jpeg" alt="Member Photo" /> </div>
+                            <div class="team-descr font-alt">
+                                <div class="team-name">PACHECO</div>
+                                <div class="team-role">DIRETOR ADM FINANCEIRO
+                                    <br><a><i class="fa fa-envelope"></i> pacheco@checkvar.com.br</a></div>
+                            </div>
                         </div>
-                      </div>
                     </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="container">
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <div class="module-icon"><span class="icon-quote"></span></div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-8 col-sm-offset-2">
-                      <blockquote class="testimonial-text font-alt">I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents.</blockquote>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-4 col-sm-offset-4">
-                      <div class="testimonial-author">
-                        <div class="testimonial-caption font-alt">
-                          <div class="testimonial-title">Adele Snow</div>
-                          <div class="testimonial-descr">SomeCompany INC, CEO</div>
+                    <!--                    *****-->
+                    <div class="mb-sm-20 wow fadeInUp col-sm-6 col-md-3" onclick="wow fadeInUp">
+                        <div class="team-item">
+                            <div class="team-image"> <img src="assets/images/dietmar.jpeg" alt="Member Photo" /> </div>
+                            <div class="team-descr font-alt">
+                                <div class="team-name">DIETMAR</div>
+                                <div class="team-role">DIRETOR COMERCIAL
+                                    <br><a><i class="fa fa-envelope"></i> dietmar@checkvar.com.br</a></div>
+                            </div>
                         </div>
-                      </div>
                     </div>
-                  </div>
+                    <!--                    *****-->
+                    <!--                    <div class="mb-sm-20 wow fadeInUp col-sm-6 col-md-3" onclick="wow fadeInUp">-->
+                    <div class="mb-sm-20 wow fadeInUp col-sm-6 col-md-3" onclick="wow fadeInUp">
+                        <div class="team-item">
+                            <div class="team-image"> <img src="assets/images/valim.jpeg" alt="Member Photo" /> </div>
+                            <div class="team-descr font-alt">
+                                <div class="team-name">VALIM</div>
+                                <div class="team-role">TECNOLOGIA
+                                    <br><a><i class="fa fa-envelope"></i> valim@agattp.com.br</a></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </li>
-            </ul>
-          </div>
+            </div>
         </section>
-        <section class="module" id="news">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-6 col-sm-offset-3">
-                <h2 class="module-title font-alt">Latest blog posts</h2>
-                <div class="module-subtitle font-serif">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</div>
-              </div>
+        <section class="module wow fadeInUp" onclick="wow fadeInUp pt-0 pb-0" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <h2 class="module-title font-alt">Entre em contato conosco</h2>
+                        <div class="module-subtitle font-serif"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <form id="contactForm" role="form" method="post" action="php/contact.php">
+                            <div class="form-group">
+                                <label class="sr-only" for="name">Nome</label>
+                                <input class="form-control" type="text" id="name" name="name" placeholder="Seu Nome*" required="required" data-validation-required-message="Por favor coloque seu nome." />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="email">E-mail</label>
+                                <input class="form-control" type="email" id="email" name="email" placeholder="Seu E-mail*" required="required" data-validation-required-message="Por favor coloque seu e-mail." />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" rows="7" id="message" name="message" placeholder="Escreva sua mensagem*" required="required" data-validation-required-message="Por favor, digite sua mensagem"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="text-center">
+                                <button class="btn btn-block btn-round btn-d" id="cfsubmit" type="submit">Enviar</button>
+                            </div>
+                        </form>
+                        <div class="ajax-response font-alt" id="contactFormResponse"></div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-md-offset-3 pt-50">
+                        <div class="module-subtitle pt-50">
+                            <p>
+                                <spam class="contatoBIG">CheckVar Tecnologia e Soluções Automobilistica Ltda</spam>
+                                <spam class="contatoSMALL">
+                                    <br> Rua dos Guajajaras, 40 - Sala 704
+                                    <br> Centro - Belo Horixonte MG
+                                    <br> <i class="fa fa-envelope"></i> contato@checkvar.com.br</spam>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="row multi-columns-row post-columns">
-              <div class="col-sm-6 col-md-4 col-lg-4">
-                <div class="post mb-20">
-                  <div class="post-thumbnail"><a href="#"><img src="assets/images/post-1.jpg" alt="Blog-post Thumbnail"/></a></div>
-                  <div class="post-header font-alt">
-                    <h2 class="post-title"><a href="#">Our trip to the Alps</a></h2>
-                    <div class="post-meta">By&nbsp;<a href="#">Mark Stone</a>&nbsp;| 23 November | 3 Comments
-                    </div>
-                  </div>
-                  <div class="post-entry">
-                    <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-                  </div>
-                  <div class="post-more"><a class="more-link" href="#">Read more</a></div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-4 col-lg-4">
-                <div class="post mb-20">
-                  <div class="post-thumbnail"><a href="#"><img src="assets/images/post-2.jpg" alt="Blog-post Thumbnail"/></a></div>
-                  <div class="post-header font-alt">
-                    <h2 class="post-title"><a href="#">Shore after the tide</a></h2>
-                    <div class="post-meta">By&nbsp;<a href="#">Andy River</a>&nbsp;| 11 November | 4 Comments
-                    </div>
-                  </div>
-                  <div class="post-entry">
-                    <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-                  </div>
-                  <div class="post-more"><a class="more-link" href="#">Read more</a></div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-4 col-lg-4">
-                <div class="post mb-20">
-                  <div class="post-thumbnail"><a href="#"><img src="assets/images/post-3.jpg" alt="Blog-post Thumbnail"/></a></div>
-                  <div class="post-header font-alt">
-                    <h2 class="post-title"><a href="#">We in New Zealand</a></h2>
-                    <div class="post-meta">By&nbsp;<a href="#">Dylan Woods</a>&nbsp;| 5 November | 15 Comments
-                    </div>
-                  </div>
-                  <div class="post-entry">
-                    <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-                  </div>
-                  <div class="post-more"><a class="more-link" href="#">Read more</a></div>
-                </div>
-              </div>
-            </div>
-          </div>
         </section>
-        <div class="module-small bg-dark">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-6 col-md-6 col-lg-4 col-lg-offset-2">
-                <div class="callout-text font-alt">
-                  <h3 class="callout-title">Subscribe now</h3>
-                  <p>We will not spam your email.</p>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-6 col-lg-4">
-                <div class="callout-btn-box">
-                  <form id="subscription-form" role="form" method="post" action="php/subscribe.php">
-                    <div class="input-group">
-                      <input class="form-control" type="email" id="semail" name="semail" placeholder="Your Email" data-validation-required-message="Please enter your email address." required="required"/><span class="input-group-btn">
-                        <button class="btn btn-g btn-round" id="subscription-form-submit" type="submit">Submit</button></span>
-                    </div>
-                  </form>
-                  <div class="text-center" id="subscription-response"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <section class="module" id="contact">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-6 col-sm-offset-3">
-                <h2 class="module-title font-alt">Get in touch</h2>
-                <div class="module-subtitle font-serif"></div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-6 col-sm-offset-3">
-                <form id="contactForm" role="form" method="post" action="php/contact.php">
-                  <div class="form-group">
-                    <label class="sr-only" for="name">Name</label>
-                    <input class="form-control" type="text" id="name" name="name" placeholder="Your Name*" required="required" data-validation-required-message="Please enter your name."/>
-                    <p class="help-block text-danger"></p>
-                  </div>
-                  <div class="form-group">
-                    <label class="sr-only" for="email">Email</label>
-                    <input class="form-control" type="email" id="email" name="email" placeholder="Your Email*" required="required" data-validation-required-message="Please enter your email address."/>
-                    <p class="help-block text-danger"></p>
-                  </div>
-                  <div class="form-group">
-                    <textarea class="form-control" rows="7" id="message" name="message" placeholder="Your Message*" required="required" data-validation-required-message="Please enter your message."></textarea>
-                    <p class="help-block text-danger"></p>
-                  </div>
-                  <div class="text-center">
-                    <button class="btn btn-block btn-round btn-d" id="cfsubmit" type="submit">Submit</button>
-                  </div>
-                </form>
-                <div class="ajax-response font-alt" id="contactFormResponse"></div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <div class="module-small bg-dark">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-3">
-                <div class="widget">
-                  <h5 class="widget-title font-alt">About Titan</h5>
-                  <p>The languages only differ in their grammar, their pronunciation and their most common words.</p>
-                  <p>Phone: +1 234 567 89 10</p>Fax: +1 234 567 89 10
-                  <p>Email:<a href="#">somecompany@example.com</a></p>
-                </div>
-              </div>
-              <div class="col-sm-3">
-                <div class="widget">
-                  <h5 class="widget-title font-alt">Recent Comments</h5>
-                  <ul class="icon-list">
-                    <li>Maria on <a href="#">Designer Desk Essentials</a></li>
-                    <li>John on <a href="#">Realistic Business Card Mockup</a></li>
-                    <li>Andy on <a href="#">Eco bag Mockup</a></li>
-                    <li>Jack on <a href="#">Bottle Mockup</a></li>
-                    <li>Mark on <a href="#">Our trip to the Alps</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-sm-3">
-                <div class="widget">
-                  <h5 class="widget-title font-alt">Blog Categories</h5>
-                  <ul class="icon-list">
-                    <li><a href="#">Photography - 7</a></li>
-                    <li><a href="#">Web Design - 3</a></li>
-                    <li><a href="#">Illustration - 12</a></li>
-                    <li><a href="#">Marketing - 1</a></li>
-                    <li><a href="#">Wordpress - 16</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-sm-3">
-                <div class="widget">
-                  <h5 class="widget-title font-alt">Popular Posts</h5>
-                  <ul class="widget-posts">
-                    <li class="clearfix">
-                      <div class="widget-posts-image"><a href="#"><img src="assets/images/rp-1.jpg" alt="Post Thumbnail"/></a></div>
-                      <div class="widget-posts-body">
-                        <div class="widget-posts-title"><a href="#">Designer Desk Essentials</a></div>
-                        <div class="widget-posts-meta">23 january</div>
-                      </div>
-                    </li>
-                    <li class="clearfix">
-                      <div class="widget-posts-image"><a href="#"><img src="assets/images/rp-2.jpg" alt="Post Thumbnail"/></a></div>
-                      <div class="widget-posts-body">
-                        <div class="widget-posts-title"><a href="#">Realistic Business Card Mockup</a></div>
-                        <div class="widget-posts-meta">15 February</div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
         <hr class="divider-d">
         <footer class="footer bg-dark">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-6">
-                <p class="copyright font-alt">&copy; 2017&nbsp;<a href="index.html">TitaN</a>, All Rights Reserved</p>
-              </div>
-              <div class="col-sm-6">
-                <div class="footer-social-links"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-dribbble"></i></a><a href="#"><i class="fa fa-skype"></i></a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-4 col-xs-offset-4 hidden-md hidden-lg">
+                        <div class="footer-social-links"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-skype"></i></a> </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <p class="copyright font-alt">&copy; 2019&nbsp;<a href="https://transitabile.com.br/portal/">Transitabile</a>, All Rights Reserved</p>
+                    </div>
+                    <div class="col-md-6 hidden-xs hidden-sm">
+                        <!--                        <div class="footer-social-links"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-skype"></i></a> </div>--></div>
                 </div>
-              </div>
             </div>
-          </div>
         </footer>
-<!--      </div>-->
-      <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
+        <!--      </div>-->
+        <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
     </main>
     <!--  
     JavaScripts
     =============================================
     -->
     <script type="text/javascript">
-            
-        /**
-        * variaveis para determinar a duracao do slider da secao
-        * de checkups
-        **/
-        var timeS3 = 4, timeS6 = 2;
-        
-//        var slider3 = function (_x, _y, _z){
-        var slider3 = function (){
-            
-            var _x = 'slide1', _y = 'slide2', _z = 'slide3';
-            if($('input:radio[id="'+ _x +'"]').is(':checked') == true){
-//                    alert("slide1");
-                $('input:radio[id="'+_x+'"]').attr('checked', false);
-                $('input:radio[id="'+_y+'"]').attr('checked', true);
-                $('input:radio[id="'+_z+'"]').attr('checked', false);
+        function abrirefechar() {
+            $("#works").toggle(500);
+        }
+        //        var slider3 = function (_x, _y, _z){
+        var slider3 = function () {
+            var _x = 'slide1'
+                , _y = 'slide2'
+                , _z = 'slide3';
+            if ($('input:radio[id="' + _x + '"]').is(':checked') == true) {
+                //                    alert("slide1");
+                $('input:radio[id="' + _x + '"]').attr('checked', false);
+                $('input:radio[id="' + _y + '"]').attr('checked', true);
+                $('input:radio[id="' + _z + '"]').attr('checked', false);
             }
-            else if($('input:radio[id="'+_y+'"]').is(':checked') == true){
-//                    alert("slide2");
-                $('input:radio[id="'+_y+'"]').attr('checked', false);
-                $('input:radio[id="'+_z+'"]').attr('checked', true);
-                $('input:radio[id="'+_x+'"]').attr('checked', false);
+            else if ($('input:radio[id="' + _y + '"]').is(':checked') == true) {
+                //                    alert("slide2");
+                $('input:radio[id="' + _y + '"]').attr('checked', false);
+                $('input:radio[id="' + _z + '"]').attr('checked', true);
+                $('input:radio[id="' + _x + '"]').attr('checked', false);
             }
-            else if($('input:radio[id="'+_z+'"]').is(':checked') == true){
-//                    alert("slide3");
-                $('input:radio[id="'+_z+'"]').attr('checked', false);
-                $('input:radio[id="'+_x+'"]').attr('checked', true);
-                $('input:radio[id="'+_y+'"]').attr('checked', false);
+            else if ($('input:radio[id="' + _z + '"]').is(':checked') == true) {
+                //                    alert("slide3");
+                $('input:radio[id="' + _z + '"]').attr('checked', false);
+                $('input:radio[id="' + _x + '"]').attr('checked', true);
+                $('input:radio[id="' + _y + '"]').attr('checked', false);
             }
-            timeOut3;
+        };
+        let g_if = 0;
+        let g_func = 0;
+        var slider6 = function () {
+            var _x = 'slide4'
+                , _y = 'slide5'
+                , _z = 'slide6'
+                , _k = 'slide7'
+                , _i = 'slide8'
+                , _c = 'slide9';
+            if ($('input:radio[id="slide4"]').is(':checked') == true) {
+                //                    alert("slide1");
+                $('input:radio[id="slide4"]').attr('checked', false);
+                $('input:radio[id="slide6"]').attr('checked', false);
+                $('input:radio[id="slide5"]').attr('checked', true);
+                //                $('input:radio[id="slide7"]').attr('checked', false);
+                //                $('input:radio[id="slide8"]').attr('checked', false);
+                //                $('input:radio[id="slide9"]').attr('checked', false);
+                g_if++;
+            }
+            else if ($('input:radio[id="slide5"]').is(':checked') == true) {
+                //                    alert("slide2");
+                $('input:radio[id="slide5"]').attr('checked', false);
+                $('input:radio[id="slide4"]').attr('checked', false);
+                $('input:radio[id="slide6"]').attr('checked', true);
+                //                $('input:radio[id="slide7"]').attr('checked', false);
+                //                $('input:radio[id="slide8"]').attr('checked', false);
+                //                $('input:radio[id="slide9"]').attr('checked', false);
+                g_if++;
+            }
+            else if ($('input:radio[id="slide6"]').is(':checked') == true) {
+                //                    alert("slide3");
+                $('input:radio[id="slide6"]').attr('checked', false);
+                //                $('input:radio[id="slide7"]').attr('checked', true);
+                $('input:radio[id="slide5"]').attr('checked', false);
+                $('input:radio[id="slide4"]').attr('checked', true);
+                //                $('input:radio[id="slide8"]').attr('checked', false);
+                //                $('input:radio[id="slide9"]').attr('checked', false);
+                g_if++;
+            }
+            //            else if ($('input:radio[id="' + _k + '"]').is(':checked') == true) { // // alert("slide4"); // $('input:radio[id="slide7"]').attr('checked', false); // $('input:radio[id="slide8"]').attr('checked', true); // $('input:radio[id="slide4"]').attr('checked', false); // $('input:radio[id="slide5"]').attr('checked', false); // $('input:radio[id="slide6"]').attr('checked', false); // $('input:radio[id="slide9"]').attr('checked', false); // g_if++; // } // else if ($('input:radio[id="slide8"]').is(':checked') == true) { // // alert("slide5"); // $('input:radio[id="slide8"]').attr('checked', false); // $('input:radio[id="slide9"]').attr('checked', true); // $('input:radio[id="slide4"]').attr('checked', false); // $('input:radio[id="slide5"]').attr('checked', false); // $('input:radio[id="slide6"]').attr('checked', false); // $('input:radio[id="slide7"]').attr('checked', false); // g_if++; // } // else if ($('input:radio[id="slide9"]').is(':checked') == true) { // // alert("slide6"); // $('input:radio[id="slide9"]').attr('checked', false); // $('input:radio[id="slide4"]').attr('checked', true); // $('input:radio[id="slide5"]').attr('checked', false); // $('input:radio[id="slide6"]').attr('checked', false); // $('input:radio[id="slide7"]').attr('checked', false); // $('input:radio[id="slide8"]').attr('checked', false); // g_if++; // }
+            g_func++;
+            console.log(g_func + "---func");
+            console.log(g_if + "-----------if");
+        };
 
-          };
-        var slider6 = function (){
-            
-            var _x = 'slide4', _y = 'slide5', _z = 'slide6', _k = 'slide7', _i = 'slide8', _c = 'slide9';
-            
-            if($('input:radio[id="'+ _x +'"]').is(':checked') == true){
-//                    alert("slide1");
-                $('input:radio[id="'+_x+'"]').attr('checked', false);
-                $('input:radio[id="'+_y+'"]').attr('checked', true);
-                $('input:radio[id="'+_z+'"]').attr('checked', false);
-                $('input:radio[id="'+_k+'"]').attr('checked', false);
-                $('input:radio[id="'+_i+'"]').attr('checked', false);
-                $('input:radio[id="'+_c+'"]').attr('checked', false);
-            }
-            
-            else if($('input:radio[id="'+_y+'"]').is(':checked') == true){
-//                    alert("slide2");
-                $('input:radio[id="'+_y+'"]').attr('checked', false);
-                $('input:radio[id="'+_z+'"]').attr('checked', true);
-                $('input:radio[id="'+_x+'"]').attr('checked', false);
-                $('input:radio[id="'+_k+'"]').attr('checked', false);
-                $('input:radio[id="'+_i+'"]').attr('checked', false);
-                $('input:radio[id="'+_c+'"]').attr('checked', false);
-            }
-            
-            else if($('input:radio[id="'+_z+'"]').is(':checked') == true){
-//                    alert("slide3");
-                $('input:radio[id="'+_z+'"]').attr('checked', false);
-                $('input:radio[id="'+_k+'"]').attr('checked', true);
-                $('input:radio[id="'+_x+'"]').attr('checked', false);
-                $('input:radio[id="'+_y+'"]').attr('checked', false);
-                $('input:radio[id="'+_i+'"]').attr('checked', false);
-                $('input:radio[id="'+_c+'"]').attr('checked', false);
-            }
-            else if($('input:radio[id="'+ _k +'"]').is(':checked') == true){
-//                    alert("slide1");
-                $('input:radio[id="'+_k+'"]').attr('checked', false);
-                $('input:radio[id="'+_i+'"]').attr('checked', true);
-                $('input:radio[id="'+_x+'"]').attr('checked', false);
-                $('input:radio[id="'+_y+'"]').attr('checked', false);
-                $('input:radio[id="'+_z+'"]').attr('checked', false);
-                $('input:radio[id="'+_c+'"]').attr('checked', false);
-            }
-            else if($('input:radio[id="'+_i+'"]').is(':checked') == true){
-//                    alert("slide2");
-                $('input:radio[id="'+_i+'"]').attr('checked', false);
-                $('input:radio[id="'+_c+'"]').attr('checked', true);
-                $('input:radio[id="'+_x+'"]').attr('checked', false);
-                $('input:radio[id="'+_y+'"]').attr('checked', false);
-                $('input:radio[id="'+_z+'"]').attr('checked', false);
-                $('input:radio[id="'+_k+'"]').attr('checked', false);
-            }
-            else if($('input:radio[id="'+_c+'"]').is(':checked') == true){
-//                    alert("slide3");
-                $('input:radio[id="'+_c+'"]').attr('checked', false);
-                $('input:radio[id="'+_x+'"]').attr('checked', true);
-                $('input:radio[id="'+_y+'"]').attr('checked', false);
-                $('input:radio[id="'+_z+'"]').attr('checked', false);
-                $('input:radio[id="'+_k+'"]').attr('checked', false);
-                $('input:radio[id="'+_i+'"]').attr('checked', false);
-            }
-            timeOut6;
+        function iniciaSlides() {}
 
-          };
-        var timeOut3 = setTimeout(slider3, timeS3 * 1000);
-        var timeOut6 = setTimeout(slider6, timeS6 * 1000);
-        var slider_3_interval = setInterval(slider3, timeS3 * 1000);
-        var slider_6_interval = setInterval(slider6, timeS6 * 1000);
-      
         function iniciar() {
-//            setInterval(slider3("slide1","slide2","slide3"), 2000);
-//            slider_3_interval;
-//            slider_6_interval
-            slider6;
-            slider3;
+            //            setInterval(slider3("slide1","slide2","slide3"), 2000);
+            setInterval(slider3, 4000);
+            //            setInterval(slider6, 1500);
+            setInterval(slider6, 4000);
+            iniciaSlides();
+            abrirefechar();
         }
         window.addEventListener("load", iniciar, false);
-
-        
-                
-
-            
+        //        $("#works").toggle(10);
+        abrirefechar();
     </script>
     <script src="assets/lib/jquery/dist/jquery.js"></script>
     <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -1737,8 +937,6 @@
     <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
-    
-    
-    
-  </body>
+</body>
+
 </html>

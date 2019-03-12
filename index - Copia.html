@@ -1,0 +1,1966 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Document Title
+    =============================================-->
+    <title>Check Var</title>
+    <!--Favicons
+    =============================================-->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/images/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--Stylesheets
+    =============================================-->
+    <!-- Default stylesheets-->
+    <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Template specific stylesheets-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Volkhov:400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link href="assets/lib/animate.css/animate.css" rel="stylesheet">
+    <link href="assets/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/lib/et-line-font/et-line-font.css" rel="stylesheet">
+    <link href="assets/lib/flexslider/flexslider.css" rel="stylesheet">
+    <link href="assets/lib/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link href="assets/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
+    <link href="assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
+    <!-- Main stylesheet and color file-->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/solid.css" integrity="sha384-r/k8YTFqmlOaqRkZuSiE9trsrDXkh07mRaoGBMoDcmA58OHILZPsk29i2BsFng1B" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/fontawesome.css" integrity="sha384-4aon80D8rXCGx9ayDt85LbyUHeMWd3UiBaWliBlJ53yzm9hqN21A+o1pqoyK04h+" crossorigin="anonymous">
+    <style>
+        .blur_bkg {
+            -webkit-filter: blur(0.15em);
+            filter: blur(0.15em);
+            -moz-filter: blur(0.15em);
+            -o-filter: blur(0.15em);
+            -ms-filter: blur(0.15em);
+        }
+        
+        .blur_fnt {
+            -webkit-filter: blur(0em) !importante;
+            filter: blur(0em) !importante;
+            -moz-filter: blur(0em) !importante;
+            -o-filter: blur(0em) !importante;
+            -ms-filter: blur(0em) !importante;
+        }
+        
+        .vd_youtube {
+            width: calc(56.0vmax/1.5);
+            height: calc(31.5vmax/1.5);
+            margin: 3em;
+            box-shadow: rgba(2, 2, 2, 0.5) .51em .2em 5em 1em;
+        }
+        
+        .gamba {
+            padding-top: 15vh;
+        }
+        
+        .sliderG {
+            display: block;
+            height: 190vh;
+            /*              width: 450px;*/
+            margin: auto;
+            /*              margin-top: 20px;*/
+            position: relative;
+            margin-bottom: 22vh;
+        }
+        
+        @media (max-width:991px) {
+            .sliderG {
+                display: block;
+                height: 190vh;
+                /*              width: 450px;*/
+                margin: auto;
+                /*              margin-top: 20px;*/
+                position: relative;
+                margin-bottom: 22vh;
+            }
+            .alinhamento_video {
+                text-align: center !important;
+                padding-top: 20%;
+            }
+        }
+        
+        @media (max-width:560px) {
+            .sliderG {
+                display: block;
+                height: 70vh;
+                /*              width: 450px;*/
+                margin: auto;
+                /*              margin-top: 20px;*/
+                position: relative;
+                margin-bottom: 22vh;
+            }
+            .alinhamento_video {
+                text-align: center !important;
+                padding-top: 20%;
+            }
+        }
+        
+        .sliderG {
+            display: block;
+            height: 40vh;
+            /*              width: 450px;*/
+            margin: auto;
+            /*              margin-top: 20px;*/
+            position: relative;
+            margin-bottom: 22vh;
+        }
+        
+        .sliderG li {
+            list-style: none;
+            position: absolute;
+        }
+        
+        .sliderG img {
+            margin: auto;
+            /*
+              height: 100%;
+              width: 100%;
+*/
+            vertical-align: top;
+        }
+        
+        .sliderG input {
+            display: none;
+        }
+        
+        .sliderG label {
+            display: none;
+        }
+        
+        .sliderG li:nth-child(1) label {
+            left: 30px;
+        }
+        
+        .sliderG li:nth-child(2) label {
+            left: 120px;
+        }
+        
+        .sliderG li:nth-child(3) label {
+            left: 210px;
+        }
+        
+        .sliderG img {
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        .sliderG li input:checked ~ img {
+            opacity: 1;
+            visibility: visible;
+            z-index: 10;
+        }
+        
+        .img_menu_filtro {
+            width: 50%;
+            /*              margin-left: 25%;*/
+            display: inline-block;
+            padding: 10px;
+        }
+        
+        .filter {
+            text-align: center;
+            list-style: none;
+            padding: 0;
+            margin: 0 0 70px;
+            display: inline-block;
+        }
+        
+        .filter > li {
+            text-align: center;
+            display: inline-block;
+            padding: 0 5px 10px;
+            margin: 0 25px;
+            width: 8%;
+        }
+        
+        .filter > li > a {
+            text-align: center;
+        }
+        
+        #logoTop {
+            width: 80px;
+            height: 80px;
+            background-image: url(assets/images/logo/Logocfundo1.svg);
+            background-size: cover;
+            position: relative;
+            float: left;
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        .recuo {
+            margin-left: 2em;
+        }
+        
+        @media (min-width: 768px) {
+            #works-grid > li {
+                width: 10% !important;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            #works-grid > li {
+                width: 33% !important;
+            }
+            .img_menu_filtro {
+                width: 80%;
+                /*              margin-left: 25%;*/
+                display: inline-block;
+                padding: 10px;
+            }
+            .filter > li {
+                text-align: center;
+                display: inline-block;
+                padding: 0 10px 10px;
+                margin: 0 30px;
+                width: 20%;
+            }
+            .quadroItensE {
+                height: 280px !important;
+                margin: 0px 0px 10px 0px !important;
+                padding: 0px !important;
+            }
+            .quadroItensC {
+                height: 240px !important;
+                margin: 0px 0px 0px 0px !important;
+                padding: 0px !important;
+            }
+            .quadroItensCtop {
+                height: 220px !important;
+                margin: 0px 0px 10px 0px !important;
+                padding: 0px !important;
+            }
+            .quadroItensD {
+                height: 280px !important;
+                margin: 0px 0px 10px 0px !important;
+                padding: 0px !important;
+            }
+            .quadroItensV {
+                height: 280px !important;
+                margin: 0px 0px 10px 0px !important;
+                padding: 0px !important;
+            }
+            .alinhamento_video {
+                text-align: center !important;
+                padding-top: 20%;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            #logoTop {
+                width: 90px !important;
+                height: 80px!important;
+                background-image: url(assets/images/logo/Logocfundo1.png)!important;
+                background-size: 90px 80px;
+                /*
+                position: relative!important;
+                float: left!important;
+*/
+                padding: 0px!important;
+                margin: 15px!important;
+            }
+        }
+        
+        .quadroItensE {
+            height: 200px;
+            margin: 0px 0px 10px 0px;
+            padding: 8px;
+            background-color: rgba(43, 43, 43, 0.2);
+            background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.9) 50%, rgba(43, 43, 43, 0.1));
+            border: 2px solid rgba(43, 43, 43, 0.8);
+            border-radius: 10px 40px 10px 40px;
+        }
+        
+        .quadroItensC {
+            height: 200px;
+            margin: 0px 0px 10px 0px;
+            padding: 8px;
+            background-color: rgba(43, 43, 43, 0.2);
+            border: 2px solid rgba(43, 43, 43, 0.8);
+            border-radius: 40px 40px 10px 10px;
+        }
+        
+        .quadroItensCtop {
+            height: 200px;
+            margin: 0px 0px 10px 0px;
+            padding: 8px;
+            background-color: rgba(43, 43, 43, 0.2);
+            background-image: linear-gradient( 0deg, rgba(255, 255, 255, 0.9) 50%, rgba(43, 43, 43, 0.1));
+            border: 2px solid rgba(43, 43, 43, 0.8);
+            border-radius: 40px 40px 10px 10px;
+        }
+        
+        .quadroItensCbody {
+            height: 800px;
+            margin: 10px 0px 10px 0px;
+            padding: 8px;
+            background-color: rgba(200, 200, 200, 0.01);
+            border: 2px solid rgba(43, 43, 43, 0.5);
+            border-radius: 40px 40px 10px 10px;
+        }
+        
+        .quadroItensCbody img {
+            margin-top: 80px;
+            height: 600px;
+            /*              margin: 3vmin 4%;*/
+        }
+        
+        .quadroItensD {
+            height: 200px;
+            margin: 0px 0px 10px 0px;
+            padding: 8px;
+            background-color: rgba(43, 43, 43, 0.2);
+            background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.9) 50%, rgba(43, 43, 43, 0.1));
+            border: 2px solid rgba(43, 43, 43, 0.8);
+            border-radius: 40px 10px 40px 10px;
+        }
+        
+        .quadroItensV {
+            height: 200px;
+            margin: 0px 0px 10px 0px;
+            padding: 8px;
+            background-color: rgba(255, 255, 255, 0.01);
+            background: transparent;
+            border: 0px solid rgba(43, 43, 43, 0.8);
+            border-radius: 10px 40px 10px 40px;
+        }
+        
+        .itemPecas {
+            padding: 10px;
+        }
+        
+        .paddzero {
+            padding: 0px !important;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        
+        .padd150 {
+            margin-top: 50px;
+            padding-bottom: 150px;
+            padding-top: 120px;
+            background-color: rgba(43, 43, 43, 0.7);
+            border: 3px solid rgba(43, 43, 43, 1);
+            border-radius: 10px 50px 50px 10px;
+        }
+        
+        .alinhamento_video {
+            text-align: left !important;
+            padding-top: 20%;
+        }
+        
+        .alinhamento_left {
+            text-align: left !important;
+            padding-top: 20%;
+        }
+        
+        .alinhamento_right {
+            text-align: right !important;
+            padding-top: 20%;
+        }
+        /*
+          #works-grid > li{
+              width: 10% !important;
+          }
+*/
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+    <main>
+        <div class="page-loader">
+            <div class="loader">Carregando...</div>
+        </div>
+        <!--
+    MENU PRINCIPAL
+    **************
+-->
+        <nav class="navbar navbar-custom navbar-fixed-top navbar-transparent" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                    <a class="navbar-brand" href="index.html" id="logoTop">
+                        <!--                  <img src="assets/images/logo/Logocfundo2.png" class="logotop" >-->
+                        <!--                  <div class="logotop"></div>-->
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="custom-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">INÍCIO</a></li>
+                        <li><a href="#">SOBRE NÓS</a></li>
+                        <li><a href="#">CHECKUP</a></li>
+                        <li><a href="#">ITENS</a></li>
+                        <li><a href="#">VANTAGENS</a></li>
+                        <li><a href="#">QUANTO TEMPO</a></li>
+                        <li><a href="#">OPINIÕES</a></li>
+                        <li><a href="#">RESPONSÁVEIS</a></li>
+                        <li><a href="#">CONTATO</a></li>
+                        <!--
+              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Inicio</a>
+                <ul class="dropdown-menu">
+                  <li><a href="index_mp_fullscreen_video_background.html">Default</a></li>
+                  <li><a href="index_op_fullscreen_gradient_overlay.html">One Page</a></li>
+                  <li><a href="index_agency.html">Agency</a></li>
+                  <li><a href="index_portfolio.html">Portfolio</a></li>
+                  <li><a href="index_restaurant.html">Restaurant</a></li>
+                  <li><a href="index_finance.html">Finance</a></li>
+                  <li><a href="index_landing.html">Landing Page</a></li>
+                  <li><a href="index_photography.html">Photography</a></li>
+                  <li><a href="index_shop.html">Shop</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Headers</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Static Image Header</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="index_mp_fullscreen_static.html">Fulscreen</a></li>
+                      <li><a href="index_mp_classic_static.html">Classic</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Flexslider Header</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="index_mp_fullscreen_flexslider.html">Fulscreen</a></li>
+                      <li><a href="index_mp_classic_flexslider.html">Classic</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Video Background Header</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="index_mp_fullscreen_video_background.html">Fulscreen</a></li>
+                      <li><a href="index_mp_classic_video_background.html">Classic</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Text Rotator Header</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="index_mp_fullscreen_text_rotator.html">Fulscreen</a></li>
+                      <li><a href="index_mp_classic_text_rotator.html">Classic</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Gradient Overlay Header</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="index_mp_fullscreen_gradient_overlay.html">Fulscreen</a></li>
+                      <li><a href="index_mp_classic_gradient_overlay.html">Classic</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Pages</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">About</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="about1.html">About 1</a></li>
+                      <li><a href="about2.html">About 2</a></li>
+                      <li><a href="about3.html">About 3</a></li>
+                      <li><a href="about4.html">About 4</a></li>
+                      <li><a href="about5.html">About 5</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Services</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="service1.html">Service 1</a></li>
+                      <li><a href="service2.html">Service 2</a></li>
+                      <li><a href="service3.html">Service 3</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Pricing</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="pricing1.html">Pricing 1</a></li>
+                      <li><a href="pricing2.html">Pricing 2</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Gallery</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="gallery_col_2.html">2 Columns</a></li>
+                      <li><a href="gallery_col_3.html">3 Columns</a></li>
+                      <li><a href="gallery_col_4.html">4 Columns</a></li>
+                      <li><a href="gallery_col_6.html">6 Columns</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Contact</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="contact1.html">Contact 1</a></li>
+                      <li><a href="contact2.html">Contact 2</a></li>
+                      <li><a href="contact3.html">Contact 3</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Restaurant menu</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="restaurant_menu1.html">Menu 2 Columns</a></li>
+                      <li><a href="restaurant_menu2.html">Menu 3 Columns</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="login_register.html">Login / Register</a></li>
+                  <li><a href="faq.html">FAQ</a></li>
+                  <li><a href="404.html">Page 404</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Portfolio</a>
+                <ul class="dropdown-menu" role="menu">
+                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Boxed</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="portfolio_boxed_col_2.html">2 Columns</a></li>
+                      <li><a href="portfolio_boxed_col_3.html">3 Columns</a></li>
+                      <li><a href="portfolio_boxed_col_4.html">4 Columns</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Boxed - Gutter</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="portfolio_boxed_gutter_col_2.html">2 Columns</a></li>
+                      <li><a href="portfolio_boxed_gutter_col_3.html">3 Columns</a></li>
+                      <li><a href="portfolio_boxed_gutter_col_4.html">4 Columns</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Full Width</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="portfolio_full_width_col_2.html">2 Columns</a></li>
+                      <li><a href="portfolio_full_width_col_3.html">3 Columns</a></li>
+                      <li><a href="portfolio_full_width_col_4.html">4 Columns</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Full Width - Gutter</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="portfolio_full_width_gutter_col_2.html">2 Columns</a></li>
+                      <li><a href="portfolio_full_width_gutter_col_3.html">3 Columns</a></li>
+                      <li><a href="portfolio_full_width_gutter_col_4.html">4 Columns</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Masonry</a>
+                    <ul class="dropdown-menu">
+                      <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Boxed</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="portfolio_masonry_boxed_col_2.html">2 Columns</a></li>
+                          <li><a href="portfolio_masonry_boxed_col_3.html">3 Columns</a></li>
+                          <li><a href="portfolio_masonry_boxed_col_4.html">4 Columns</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Full Width</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="portfolio_masonry_full_width_col_2.html">2 Columns</a></li>
+                          <li><a href="portfolio_masonry_full_width_col_3.html">3 Columns</a></li>
+                          <li><a href="portfolio_masonry_full_width_col_4.html">4 Columns</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Hover Style</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="portfolio_hover_black.html">Black</a></li>
+                      <li><a href="portfolio_hover_gradient.html">Gradient</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Single</a>
+                    <ul class="dropdown-menu">
+                      <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Featured Image</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="portfolio_single_featured_image1.html">Style 1</a></li>
+                          <li><a href="portfolio_single_featured_image2.html">Style 2</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Featured Slider</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="portfolio_single_featured_slider1.html">Style 1</a></li>
+                          <li><a href="portfolio_single_featured_slider2.html">Style 2</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Featured Video</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="portfolio_single_featured_video1.html">Style 1</a></li>
+                          <li><a href="portfolio_single_featured_video2.html">Style 2</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Blog</a>
+                <ul class="dropdown-menu" role="menu">
+                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Standard</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="blog_standard_left_sidebar.html">Left Sidebar</a></li>
+                      <li><a href="blog_standard_right_sidebar.html">Right Sidebar</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Grid</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="blog_grid_col_2.html">2 Columns</a></li>
+                      <li><a href="blog_grid_col_3.html">3 Columns</a></li>
+                      <li><a href="blog_grid_col_4.html">4 Columns</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Masonry</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="blog_grid_masonry_col_2.html">2 Columns</a></li>
+                      <li><a href="blog_grid_masonry_col_3.html">3 Columns</a></li>
+                      <li><a href="blog_grid_masonry_col_4.html">4 Columns</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Single</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="blog_single_left_sidebar.html">Left Sidebar</a></li>
+                      <li><a href="blog_single_right_sidebar.html">Right Sidebar</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Features</a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="alerts-and-wells.html"><i class="fa fa-bolt"></i> Alerts and Wells</a></li>
+                  <li><a href="buttons.html"><i class="fa fa-link fa-sm"></i> Buttons</a></li>
+                  <li><a href="tabs_and_accordions.html"><i class="fa fa-tasks"></i> Tabs &amp; Accordions</a></li>
+                  <li><a href="content_box.html"><i class="fa fa-list-alt"></i> Contents Box</a></li>
+                  <li><a href="forms.html"><i class="fa fa-check-square-o"></i> Forms</a></li>
+                  <li><a href="icons.html"><i class="fa fa-star"></i> Icons</a></li>
+                  <li><a href="progress-bars.html"><i class="fa fa-server"></i> Progress Bars</a></li>
+                  <li><a href="typography.html"><i class="fa fa-font"></i> Typography</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Shop</a>
+                <ul class="dropdown-menu" role="menu">
+                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Product</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="shop_product_col_3.html">3 columns</a></li>
+                      <li><a href="shop_product_col_4.html">4 columns</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="shop_single_product.html">Single Product</a></li>
+                  <li><a href="shop_checkout.html">Checkout</a></li>
+                </ul>
+              </li>
+                
+-->
+                        <!--li.dropdown.navbar-cart-->
+                        <!--    a.dropdown-toggle(href='#', data-toggle='dropdown')-->
+                        <!--        span.icon-basket-->
+                        <!--        |-->
+                        <!--        span.cart-item-number 2-->
+                        <!--    ul.dropdown-menu.cart-list(role='menu')-->
+                        <!--        li-->
+                        <!--            .navbar-cart-item.clearfix-->
+                        <!--                .navbar-cart-img-->
+                        <!--                    a(href='#')-->
+                        <!--                        img(src='assets/images/shop/product-9.jpg', alt='')-->
+                        <!--                .navbar-cart-title-->
+                        <!--                    a(href='#') Short striped sweater-->
+                        <!--                    |-->
+                        <!--                    span.cart-amount 2 &times; $119.00-->
+                        <!--                    br-->
+                        <!--                    |-->
+                        <!--                    strong.cart-amount $238.00-->
+                        <!--        li-->
+                        <!--            .navbar-cart-item.clearfix-->
+                        <!--                .navbar-cart-img-->
+                        <!--                    a(href='#')-->
+                        <!--                        img(src='assets/images/shop/product-10.jpg', alt='')-->
+                        <!--                .navbar-cart-title-->
+                        <!--                    a(href='#') Colored jewel rings-->
+                        <!--                    |-->
+                        <!--                    span.cart-amount 2 &times; $119.00-->
+                        <!--                    br-->
+                        <!--                    |-->
+                        <!--                    strong.cart-amount $238.00-->
+                        <!--        li-->
+                        <!--            .clearfix-->
+                        <!--                .cart-sub-totle-->
+                        <!--                    strong Total: $476.00-->
+                        <!--        li-->
+                        <!--            .clearfix-->
+                        <!--                a.btn.btn-block.btn-round.btn-font-w(type='submit') Checkout-->
+                        <!--li.dropdown-->
+                        <!--    a.dropdown-toggle(href='#', data-toggle='dropdown') Search-->
+                        <!--    ul.dropdown-menu(role='menu')-->
+                        <!--        li-->
+                        <!--            .dropdown-search-->
+                        <!--                form(role='form')-->
+                        <!--                    input.form-control(type='text', placeholder='Search...')-->
+                        <!--                    |-->
+                        <!--                    button.search-btn(type='submit')-->
+                        <!--                        i.fa.fa-search-->
+                        <!--
+                
+                
+              <li class="dropdown"><a class="dropdown-toggle" href="documentation.html" data-toggle="dropdown">Documentation</a>
+                <ul class="dropdown-menu">
+                  <li><a href="documentation.html#contact">Contact Form</a></li>
+                  <li><a href="documentation.html#reservation">Reservation Form</a></li>
+                  <li><a href="documentation.html#mailchimp">Mailchimp</a></li>
+                  <li><a href="documentation.html#gmap">Google Map</a></li>
+                  <li><a href="documentation.html#plugin">Plugins</a></li>
+                  <li><a href="documentation.html#changelog">Changelog</a></li>
+                </ul>
+              </li>
+-->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--
+    CABEÇALHO
+    *********
+-->
+        <section class="home-section home-parallax home-fade home-full-height bg-dark-60" id="home" data-background="assets/images/secao_2.jpg">
+            <div class="titan-caption">
+                <div class="caption-content">
+                    <div class="font-alt mt-sm-80 mb-80 titan-title-size-1 cor_tom_branco"> CheckVar, uma forma de controlar e acompanhar o desgaste de seu veículo,
+                        <br>ajudando-o a programar manutenções preventivas periódicas. </div>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="font-alt mb-40 mt-sm-80 titan-title-size-2 cor_tom_cinza_claro"> A manutenção preventiva no seu veículo </div>
+                    <div class="font-alt mt-sm-80 mb-80 titan-title-size-4 cor_tom_cinza"> <span class="rotate">
+                            Maior segurança no trânsito | Diminui a emissão de poluentes | Reduz o cosumo de combustível
+                        </span> </div>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="font-alt mt-sm-80 mb-20 titan-title-size-1 cor_tom_branco"> Atuando preventivamente, os gastos com peças e manutenção do veículo são bem menores, além da economia de combustível.
+                        <!--<span class="rotate">
+                    Garante maior segurança no trânsito | Diminui a emissão de poluentes | Reduz o cosumo de combustível
+                </span>--></div>
+                </div>
+            </div>
+        </section>
+        <!--
+    SECAO SLIDES
+    ************
+-->
+        <section class="module pb-0 parallax-bg bg-dark-30" data-background="assets/images/secao_3.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6">
+                        <ul class="sliderG">
+                            <li>
+                                <input type="radio" id="slide1" name="slideG" checked>
+                                <label for="slide1"></label> <img src="assets/images/mks/slide_iphone_1.png" /> </li>
+                            <li>
+                                <input type="radio" id="slide2" name="slideG">
+                                <label for="slide2"></label> <img src="assets/images/mks/slide_iphone_2.png" /> </li>
+                            <li>
+                                <input type="radio" id="slide3" name="slideG">
+                                <label for="slide3"></label> <img src="assets/images/mks/slide_iphone_3.png" /> </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-5 gamba">
+                        <br>
+                        <h2 class="module-title font-alt align-left">CHECKVAR</h2>
+                        <p class="module-subtitle font-serif align-left">Independente da marca ou da categoria, é sempre importante acompanhar a manutenção preventiva do seu carro, com atenção aos itens que exigem a troca periódica. A principal razão é que a falha em manter esses componentes em boas condições pode levar a problemas mecânicos graves – e caros, ao até mesmo a acidentes fatais. Por isso criamos a CheckVar, a plataforma que lhe avisa quando está na hora de fazer a manutenção preventiva do seu veículo! </p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="row gamba">
+                    <div class="col-xs-12 col-sm-12 col-md-6 gamba">
+                        <h2 class="module-title font-alt align-left">MANUTENÇÃO PREVENTIVA:<br>ECONOMIA GARANTIDA!</h2>
+                        <p class="module-subtitle font-serif align-left">A manutenção preventiva é fundamental para manter o veículo em boas condições de funcionamento, evitando que o carro quebre e precise de uma manutenção corretiva, ou seja, um serviço de conserto de componentes que se danificaram. Lembre-se: quando seu carro quebra inesperadamente, sempre é mais caro.
+                            <br>
+                            <br>Muitos componentes e peças vão se degradando com o uso, de acordo com a quilometragem do veículo, como óleo do motor e filtro de ar. Por isso, com eles, não tem escolha: quando for alcançado o período ou a quilometragem indicada, é preciso fazer a substituição. Já a vida útil de outras peças, como embreagens, pneus e freios, por exemplo, depende da forma como o veículo é conduzido pelo motorista e dos cuidados que este tem com o automóvel, pois sua degradação é difícil de prever sem a realização do checkup. Por isso, é necessário conferir seu estado com periodicidade, substituindo as peças quando a inspeção mostrar que o componente perdeu suas características originais.
+                            <br>
+                            <br>Pensando em nossos usuários, a CheckVar efetua cotações das peças em dezenas de distribuidoras de todo o Brasil, gerando uma economia substancial, com peças de comprovada qualidade e procedência.</p>
+                        <p></p>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 gamba" style="margin-bottom: 10vh;">
+                        <ul class="sliderG">
+                            <li>
+                                <input type="radio" id="slide4" name="slideG2" checked>
+                                <label for="slide4"></label> <img src="assets/images/mks/slide_iphone_3.png" /> </li>
+                            <li>
+                                <input type="radio" id="slide5" name="slideG2">
+                                <label for="slide5"></label> <img src="assets/images/mks/slide_iphone_1.png" /> </li>
+                            <li>
+                                <input type="radio" id="slide6" name="slideG2">
+                                <label for="slide6"></label> <img src="assets/images/mks/slide_iphone_2.png" /> </li>
+                            <!--
+                            <li>
+                                <input type="radio" id="slide7" name="slideG2">
+                                <label for="slide7"></label> <img src="assets/images/mks/mks_ckVar_7.png" /> </li>
+                            <li class="gamba">
+                                <input type="radio" id="slide8" name="slideG2">
+                                <label for="slide8"></label> <img src="assets/images/raioXcarro.png" /> </li>
+                            <li>
+                                <input type="radio" id="slide9" name="slideG2">
+                                <label for="slide9"></label> <img src="assets/images/mks/mks_ckVar_5.png" /> </li>
+-->
+                        </ul>
+                    </div>
+                    <!--
+              <div class="col-sm-3 col-sm-push-3"><img  src="assets/images/mockupInicio.png" alt=""></div>
+              <div class="col-sm-3 col-sm-push-3"><img src="assets/images/mockupInicio.png" alt=""></div>
+              <div class="col-sm-6 col-sm-pull-6">
+                <h2 class="module-title font-alt align-left">Fique sempre por dentro</h2>
+                <p class="module-subtitle font-serif align-left">A informação da real situação de seu carro é fundamental quanto a segurança, tendo em vista as vidas que nele são confiadas!<br>Mantenha a constante observação na situação do seu carro através do nosso sistema de alerta de necessidades e prioridades.</p>
+--></div>
+            </div>
+        </section>
+        <hr class="divider-w">
+        <!--
+    VIDEO EXPLICATIVO
+    *****************
+-->
+        <section class="module bg-dark-60" data-background="assets/images/especial.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="video-box">
+                            <div class="video-title font-alt"> VANTAGENS DA MANUTENÇÃO PREVENTIVA DO SEU CARRO EM DIA: </div>
+                            <div class="col-sm-12 col-md-5">
+                                <div class="video-subtitle font-alt alinhamento_video">
+                                    <spam class="recuo"><i class="fas fa-circle"></i></spam> Mais segurança
+                                    <br>
+                                    <br>
+                                    <spam class="recuo"><i class="fas fa-circle"></i></spam> Garantia assegurada
+                                    <br>
+                                    <br>
+                                    <spam class="recuo"><i class="fas fa-circle"></i></spam> Menos custos
+                                    <br>
+                                    <br>
+                                    <spam class="recuo"><i class="fas fa-circle"></i></spam> Alívio no seguro
+                                    <br>
+                                    <br>
+                                    <spam class="recuo"><i class="fas fa-circle"></i></spam> Mais conforto e satisfação
+                                    <br>
+                                    <br>
+                                    <spam class="recuo"><i class="fas fa-circle"></i></spam> Proteção contra desvalorização do veículo
+                                    <br>
+                                    <br> </div>
+                            </div>
+                            <div class="col-sm-12 col-md-7">
+                                <!--
+                                <br>
+                                <br>
+                                <br>
+-->
+                                <iframe class="vd_youtube" src="https://www.youtube-nocookie.com/embed/I9dYNl3z4lQ?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="divider-w">
+        <!--
+    SECAO ITENS
+    ***********
+-->
+        <section class="module pb-0 bg-light" id="works_b">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 gamba">
+                        <br>
+                        <h2 class="module-title font-alt align-left">Quais itens são verificados na manutenção preventiva?</h2>
+                        <p class="module-subtitle font-serif align-left">
+                            <spam class="recuo">C</spam>ada fabricante ou oficina especializada possui o seu próprio esquema de manutenções a serem feitas nos veículos que estão sob sua responsabilidade.</p>
+                        <p class="module-subtitle font-serif align-left">
+                            <spam class="recuo">N</spam>o entanto, existem alguns procedimentos que são padrão em todos os casos. Veja quais são os itens que não podem ficar de fora da revisão:</p>
+                    </div>
+                    <!--                    **************************************************************************************************-->
+                    <!--                    COLUNA CENTRO PARA XS SM-->
+                    <div class="col-xs-12 col-sm-12 hidden-md hidden-lg paddzero">
+                        <!--                        <div class="col-xs-12 col-sm-12">-->
+                        <div class="quadroItensCtop">
+                            <!--                                <div class="col-xs-4 col-sm-4"><img class="itemPecas" src="assets/images/pecas/sus.png"></div>-->
+                            <div class="col-xs-10 col-sm-10 col-xs-offset-1 col-sm-offset-1">
+                                <h4>SUSPENÇÃO:</h4>
+                                <p>Amortecedores, Suportes, Pivores, Articulações, Setor Direção, Bieletas, Buchas, Batentes, Ponteiras, Óleo e Direção</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--                    **************************************************************************************************-->
+                    <!--                    INICIO COLUNA ESQUERDA-->
+                    <div class="col-xs-6 col-sm-6 col-md-4 paddzero">
+                        <div class="col-xs-12 col-sm-12 hidden-xs hidden-sm paddzero">
+                            <div class="quadroItensV">
+                                <div class="col-xs-4 col-sm-4"></div>
+                                <div class="col-xs-8 col-sm-8">
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 paddzero">
+                            <div class="quadroItensE">
+                                <div class="col-xs-4 col-sm-4 hidden-xs hidden-sm "><img class="itemPecas" src="assets/images/pecas/fr.png"></div>
+                                <div class="col-xs-12 col-sm-12 col-md-8">
+                                    <h4>FREIO:</h4>
+                                    <p>Amortecedores, Suportes, Pivores, Articulações, Setor Direção, Bieletas, Buchas, Batentes, Ponteiras, Óleo e Direção</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 paddzero">
+                            <div class="quadroItensE">
+                                <div class="col-xs-4 col-sm-4 hidden-xs hidden-sm "><img class="itemPecas" src="assets/images/pecas/sisele.png"></div>
+                                <div class="col-xs-12 col-sm-12 col-md-8">
+                                    <h4>SISTEMA ELÉTRICO:</h4>
+                                    <p>Amortecedores, Suportes, Pivores, Articulações, Setor Direção, Bieletas, Buchas, Batentes, Ponteiras, Óleo e Direção</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 paddzero">
+                            <div class="quadroItensE">
+                                <div class="col-xs-4 col-sm-4 hidden-xs hidden-sm "><img class="itemPecas" src="assets/images/pecas/mtr.png"></div>
+                                <div class="col-xs-12 col-sm-12 col-md-8">
+                                    <h4>MOTOR:</h4>
+                                    <p>Amortecedores, Suportes, Pivores, Articulações, Setor Direção, Bieletas, Buchas, Batentes, Ponteiras, Óleo e Direção</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 paddzero">
+                            <div class="quadroItensE">
+                                <div class="col-xs-4 col-sm-4 hidden-xs hidden-sm "><img class="itemPecas" src="assets/images/pecas/escap.png"></div>
+                                <div class="col-xs-12 col-sm-12 col-md-8">
+                                    <h4>ESCAPAMENTO:</h4>
+                                    <p>Amortecedores, Suportes, Pivores, Articulações, Setor Direção, Bieletas, Buchas, Batentes, Ponteiras, Óleo e Direção</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--                    FIM COLUNA ESQUERDA-->
+                    <!--                    **************************************************************************************************-->
+                    <!--                    INICIO COLUNA CENTRO MD LG-->
+                    <div class="col-xs-6 col-sm-6 col-md-4 hidden-xs hidden-sm">
+                        <div class="col-xs-12 col-sm-12 paddzero">
+                            <div class="quadroItensCtop">
+                                <div class="col-xs-4 col-sm-4"><img class="itemPecas" src="assets/images/pecas/sus.png"></div>
+                                <div class="col-xs-8 col-sm-8">
+                                    <h4>SUSPENÇÃO:</h4>
+                                    <p>Amortecedores, Suportes, Pivores, Articulações, Setor Direção, Bieletas, Buchas, Batentes, Ponteiras, Óleo e Direção</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 paddzero">
+                            <div class="quadroItensCbody">
+                                <div class="col-xs-12" style="text-align: center;"> <img src="assets/images/mb.png"> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--                    FIM COLUNA CENTRO-->
+                    <!--                    **************************************************************************************************-->
+                    <!--                    INICIO COLUNA DIREITA-->
+                    <div class="col-xs-6 col-sm-6 col-md-4 paddzero">
+                        <div class="col-xs-12 col-sm-12 hidden-xs hidden-sm paddzero">
+                            <div class="quadroItensV">
+                                <div class="col-xs-4 col-sm-4"></div>
+                                <div class="col-xs-8 col-sm-8">
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 paddzero">
+                            <div class="quadroItensD">
+                                <div class="col-xs-4 col-sm-4 hidden-xs hidden-sm "><img class="itemPecas" src="assets/images/pecas/vaza.png"></div>
+                                <div class="col-xs-8 col-sm-8">
+                                    <h4>VAZAMENTOS:</h4>
+                                    <p>Amortecedores, Suportes, Pivores, Articulações, Setor Direção, Bieletas, Buchas, Batentes, Ponteiras, Óleo e Direção</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 paddzero">
+                            <div class="quadroItensD">
+                                <div class="col-xs-4 col-sm-4 hidden-xs hidden-sm "><img class="itemPecas" src="assets/images/pecas/arref.png"></div>
+                                <div class="col-xs-8 col-sm-8">
+                                    <h4>ARREFECIMENTO:</h4>
+                                    <p>Amortecedores, Suportes, Pivores, Articulações, Setor Direção, Bieletas, Buchas, Batentes, Ponteiras, Óleo e Direção</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 paddzero">
+                            <div class="quadroItensD">
+                                <div class="col-xs-4 col-sm-4 hidden-xs hidden-sm "><img class="itemPecas" src="assets/images/pecas/camb.png"></div>
+                                <div class="col-xs-8 col-sm-8">
+                                    <h4>CÂMBIO:</h4>
+                                    <p>Amortecedores, Suportes, Pivores, Articulações, Setor Direção, Bieletas, Buchas, Batentes, Ponteiras, Óleo e Direção</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 paddzero">
+                            <div class="quadroItensD">
+                                <div class="col-xs-4 col-sm-4 hidden-xs hidden-sm "><img class="itemPecas" src="assets/images/pecas/rola.png"></div>
+                                <div class="col-xs-8 col-sm-8">
+                                    <h4>ROLAMENTO:</h4>
+                                    <p>Amortecedores, Suportes, Pivores, Articulações, Setor Direção, Bieletas, Buchas, Batentes, Ponteiras, Óleo e Direção</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--                    FIM COLUNA DIREITA-->
+                    <!--                    **************************************************************************************************-->
+                    <!--                </div>-->
+                </div>
+            </div>
+            <br>
+            <br>
+            <br> </section>
+        <!--
+    TARJA PRETA BOTAO
+    *****************
+-->
+        <section class="module-small bg-dark" id="fxpreta">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-8 col-lg-6 col-lg-offset-2">
+                        <div class="callout-text font-alt">
+                            <h3 class="callout-title">Quer saber mais?</h3>
+                            <p>Quais peças e suas importâncias....</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-2">
+                        <!--                <div class="callout-btn-box">--><a class="btn btn-w btn-round" id="abreFiltro" onclick="javascript:abrirefechar()">Abrir e Fechar Filtro</a>
+                        <!--                  </div>-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--
+    SECAO ITENS FILTRO
+    ******************
+-->
+        <section class=" pb-0 bg-light" id="works">
+            <div class="container">
+                <div class="row gamba">
+                    <div class="col-sm-12">
+                        <ul class="filter font-alt" id="filters">
+                            <li>
+                                <a class="current wow fadeInUp" href="#" data-filter="*" data-wow-delay="2.9s"> <img src="assets/images/mb.png" class="img_menu_filtro" style="transform: rotate(90deg);" />
+                                    <spam>TODOS</spam>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="wow fadeInUp" href="#" data-filter=".suspensao" data-wow-delay="1.5s"> <img src="assets/images/pecas/sus.png" class="img_menu_filtro" />
+                                    <spam>SUSPENSÃO</spam>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="wow fadeInUp" href="#" data-filter=".freio" data-wow-delay="1.3s"> <img src="assets/images/pecas/fr.png" class="img_menu_filtro" />
+                                    <spam>FREIOS</spam>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="wow fadeInUp" href="#" data-filter=".eletrica" data-wow-delay="2.5s"> <img src="assets/images/pecas/sisele.png" class="img_menu_filtro" />
+                                    <spam>ELÉTRICA</spam>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="wow fadeInUp" href="#" data-filter=".motor" data-wow-delay="2.3s"> <img src="assets/images/pecas/mtr.png" class="img_menu_filtro" />
+                                    <spam>MOTOR</spam>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="wow fadeInUp" href="#" data-filter=".escapamento" data-wow-delay="1.9"> <img src="assets/images/pecas/escap.png" class="img_menu_filtro" />
+                                    <spam>ESCAPAMENTO</spam>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="wow fadeInUp" href="#" data-filter=".vazamento" data-wow-delay="2.1s"> <img src="assets/images/pecas/vaza.png" class="img_menu_filtro" />
+                                    <spam>VAZAMENTOS</spam>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="wow fadeInUp" href="#" data-filter=".arrefecimento" data-wow-delay="1.7s"> <img src="assets/images/pecas/arref.png" class="img_menu_filtro" />
+                                    <spam>ARREFECIMENTO</spam>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="wow fadeInUp" href="#" data-filter=".cambio" data-wow-delay="1.7s"> <img src="assets/images/pecas/camb.png" class="img_menu_filtro" />
+                                    <spam>CÂMBIO</spam>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="wow fadeInUp" href="#" data-filter=".rolamento" data-wow-delay="1.7s"> <img src="assets/images/pecas/rola.png" class="img_menu_filtro" />
+                                    <spam>ROLAMENTO</spam>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <ul class="works-grid works-hover-r" id="works-grid">
+                            <li class="work-item freio suspensao">
+                                <a href="portfolio-single-1.html">
+                                    <div class="work-image"> <img src="assets/images/work-1.jpg" alt="Portfolio Item" /> </div>
+                                    <div class="work-caption font-alt">
+                                        <h3 class="work-title">Corporate Identity</h3>
+                                        <div class="work-descr">Illustration</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="work-item freio">
+                                <a href="portfolio-single-1.html">
+                                    <div class="work-image"> <img src="assets/images/work-1.jpg" alt="Portfolio Item" /> </div>
+                                    <div class="work-caption font-alt">
+                                        <h3 class="work-title">Corporate Identity</h3>
+                                        <div class="work-descr">Illustration</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="work-item freio">
+                                <a href="portfolio-single-1.html">
+                                    <div class="work-image"> <img src="assets/images/work-1.jpg" alt="Portfolio Item" /> </div>
+                                    <div class="work-caption font-alt">
+                                        <h3 class="work-title">Corporate Identity</h3>
+                                        <div class="work-descr">Illustration</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="work-item freio">
+                                <a href="portfolio-single-1.html">
+                                    <div class="work-image"> <img src="assets/images/work-1.jpg" alt="Portfolio Item" /> </div>
+                                    <div class="work-caption font-alt">
+                                        <h3 class="work-title">Corporate Identity</h3>
+                                        <div class="work-descr">Illustration</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="work-item freio">
+                                <a href="portfolio-single-1.html">
+                                    <div class="work-image"> <img src="assets/images/work-1.jpg" alt="Portfolio Item" /> </div>
+                                    <div class="work-caption font-alt">
+                                        <h3 class="work-title">Corporate Identity</h3>
+                                        <div class="work-descr">Illustration</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="work-item suspensao">
+                                <a href="portfolio-single-1.html">
+                                    <div class="work-image"> <img src="assets/images/work-1.jpg" alt="Portfolio Item" /> </div>
+                                    <div class="work-caption font-alt">
+                                        <h3 class="work-title">Corporate Identity</h3>
+                                        <div class="work-descr">Illustration</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="work-item suspensao freio">
+                                <a href="portfolio-single-1.html">
+                                    <div class="work-image"> <img src="assets/images/work-1.jpg" alt="Portfolio Item" /> </div>
+                                    <div class="work-caption font-alt">
+                                        <h3 class="work-title">Corporate Identity</h3>
+                                        <div class="work-descr">Illustration</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="work-item suspensao">
+                                <a href="portfolio-single-1.html">
+                                    <div class="work-image"> <img src="assets/images/work-1.jpg" alt="Portfolio Item" /> </div>
+                                    <div class="work-caption font-alt">
+                                        <h3 class="work-title">Corporate Identity</h3>
+                                        <div class="work-descr">Illustration</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="work-item suspensao">
+                                <a href="portfolio-single-1.html">
+                                    <div class="work-image"> <img src="assets/images/work-1.jpg" alt="Portfolio Item" /> </div>
+                                    <div class="work-caption font-alt">
+                                        <h3 class="work-title">Corporate Identity</h3>
+                                        <div class="work-descr">Illustration</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="work-item suspensao">
+                                <a href="portfolio-single-1.html">
+                                    <div class="work-image"> <img src="assets/images/work-1.jpg" alt="Portfolio Item" /> </div>
+                                    <div class="work-caption font-alt">
+                                        <h3 class="work-title">Corporate Identity</h3>
+                                        <div class="work-descr">Illustration</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="work-item arrefecimento suspensao">
+                                <a href="portfolio-single-1.html">
+                                    <div class="work-image"> <img src="assets/images/work-1.jpg" alt="Portfolio Item" /> </div>
+                                    <div class="work-caption font-alt">
+                                        <h3 class="work-title">Corporate Identity</h3>
+                                        <div class="work-descr">Illustration</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="work-item arrefecimento">
+                                <a href="portfolio-single-1.html">
+                                    <div class="work-image"> <img src="assets/images/work-1.jpg" alt="Portfolio Item" /> </div>
+                                    <div class="work-caption font-alt">
+                                        <h3 class="work-title">Corporate Identity</h3>
+                                        <div class="work-descr">Illustration</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="work-item arrefecimento freio">
+                                <a href="portfolio-single-1.html">
+                                    <div class="work-image"> <img src="assets/images/work-1.jpg" alt="Portfolio Item" /> </div>
+                                    <div class="work-caption font-alt">
+                                        <h3 class="work-title">Corporate Identity</h3>
+                                        <div class="work-descr">Illustration</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="work-item arrefecimento">
+                                <a href="portfolio-single-1.html">
+                                    <div class="work-image"> <img src="assets/images/work-1.jpg" alt="Portfolio Item" /> </div>
+                                    <div class="work-caption font-alt">
+                                        <h3 class="work-title">Corporate Identity</h3>
+                                        <div class="work-descr">Illustration</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="work-item arrefecimento">
+                                <a href="portfolio-single-1.html">
+                                    <div class="work-image"> <img src="assets/images/work-1.jpg" alt="Portfolio Item" /> </div>
+                                    <div class="work-caption font-alt">
+                                        <h3 class="work-title">Corporate Identity</h3>
+                                        <div class="work-descr">Illustration</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="work-item escapamento suspensao">
+                                <a href="portfolio-single-1.html">
+                                    <div class="work-image"> <img src="assets/images/work-1.jpg" alt="Portfolio Item" /> </div>
+                                    <div class="work-caption font-alt">
+                                        <h3 class="work-title">Corporate Identity</h3>
+                                        <div class="work-descr">Illustration</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="work-item escapamento">
+                                <a href="portfolio-single-1.html">
+                                    <div class="work-image"> <img src="assets/images/work-1.jpg" alt="Portfolio Item" /> </div>
+                                    <div class="work-caption font-alt">
+                                        <h3 class="work-title">Corporate Identity</h3>
+                                        <div class="work-descr">Illustration</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="work-item escapamento">
+                                <a href="portfolio-single-1.html">
+                                    <div class="work-image"> <img src="assets/images/work-1.jpg" alt="Portfolio Item" /> </div>
+                                    <div class="work-caption font-alt">
+                                        <h3 class="work-title">Corporate Identity</h3>
+                                        <div class="work-descr">Illustration</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="work-item escapamento freio">
+                                <a href="portfolio-single-1.html">
+                                    <div class="work-image"> <img src="assets/images/work-1.jpg" alt="Portfolio Item" /> </div>
+                                    <div class="work-caption font-alt">
+                                        <h3 class="work-title">Corporate Identity</h3>
+                                        <div class="work-descr">Illustration</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="work-item escapamento">
+                                <a href="portfolio-single-1.html">
+                                    <div class="work-image"> <img src="assets/images/work-1.jpg" alt="Portfolio Item" /> </div>
+                                    <div class="work-caption font-alt">
+                                        <h3 class="work-title">Corporate Identity</h3>
+                                        <div class="work-descr">Illustration</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="work-item vazamento">
+                                <a href="portfolio-single-1.html">
+                                    <div class="work-image"> <img src="assets/images/work-1.jpg" alt="Portfolio Item" /> </div>
+                                    <div class="work-caption font-alt">
+                                        <h3 class="work-title">Corporate Identity</h3>
+                                        <div class="work-descr">Illustration</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="work-item vazamento suspensao">
+                                <a href="portfolio-single-1.html">
+                                    <div class="work-image"> <img src="assets/images/work-1.jpg" alt="Portfolio Item" /> </div>
+                                    <div class="work-caption font-alt">
+                                        <h3 class="work-title">Corporate Identity</h3>
+                                        <div class="work-descr">Illustration</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="work-item vazamento">
+                                <a href="portfolio-single-1.html">
+                                    <div class="work-image"> <img src="assets/images/work-1.jpg" alt="Portfolio Item" /> </div>
+                                    <div class="work-caption font-alt">
+                                        <h3 class="work-title">Corporate Identity</h3>
+                                        <div class="work-descr">Illustration</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="work-item vazamento">
+                                <a href="portfolio-single-1.html">
+                                    <div class="work-image"> <img src="assets/images/work-1.jpg" alt="Portfolio Item" /> </div>
+                                    <div class="work-caption font-alt">
+                                        <h3 class="work-title">Corporate Identity</h3>
+                                        <div class="work-descr">Illustration</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="work-item vazamento freio">
+                                <a href="portfolio-single-1.html">
+                                    <div class="work-image"> <img src="assets/images/work-1.jpg" alt="Portfolio Item" /> </div>
+                                    <div class="work-caption font-alt">
+                                        <h3 class="work-title">Corporate Identity</h3>
+                                        <div class="work-descr">Illustration</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="work-item motor freio">
+                                <a href="portfolio-single-1.html">
+                                    <div class="work-image"> <img src="assets/images/work-1.jpg" alt="Portfolio Item" /> </div>
+                                    <div class="work-caption font-alt">
+                                        <h3 class="work-title">Corporate Identity</h3>
+                                        <div class="work-descr">Illustration</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="work-item motor arrefecimento arrefecimento">
+                                <a href="portfolio-single-1.html">
+                                    <div class="work-image"> <img src="assets/images/work-1.jpg" alt="Portfolio Item" /> </div>
+                                    <div class="work-caption font-alt">
+                                        <h3 class="work-title">Corporate Identity</h3>
+                                        <div class="work-descr">Illustration</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="work-item motor">
+                                <a href="portfolio-single-1.html">
+                                    <div class="work-image"> <img src="assets/images/work-1.jpg" alt="Portfolio Item" /> </div>
+                                    <div class="work-caption font-alt">
+                                        <h3 class="work-title">Corporate Identity</h3>
+                                        <div class="work-descr">Illustration</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="work-item motor suspensao">
+                                <a href="portfolio-single-1.html">
+                                    <div class="work-image"> <img src="assets/images/work-1.jpg" alt="Portfolio Item" /> </div>
+                                    <div class="work-caption font-alt">
+                                        <h3 class="work-title">Corporate Identity</h3>
+                                        <div class="work-descr">Illustration</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="work-item motor">
+                                <a href="portfolio-single-1.html">
+                                    <div class="work-image"> <img src="assets/images/work-1.jpg" alt="Portfolio Item" /> </div>
+                                    <div class="work-caption font-alt">
+                                        <h3 class="work-title">Corporate Identity</h3>
+                                        <div class="work-descr">Illustration</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="work-item eletrica">
+                                <a href="portfolio-single-1.html">
+                                    <div class="work-image"> <img src="assets/images/work-1.jpg" alt="Portfolio Item" /> </div>
+                                    <div class="work-caption font-alt">
+                                        <h3 class="work-title">Corporate Identity</h3>
+                                        <div class="work-descr">Illustration</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="work-item eletrica freio arrefecimento">
+                                <a href="portfolio-single-1.html">
+                                    <div class="work-image"> <img src="assets/images/work-1.jpg" alt="Portfolio Item" /> </div>
+                                    <div class="work-caption font-alt">
+                                        <h3 class="work-title">Corporate Identity</h3>
+                                        <div class="work-descr">Illustration</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="work-item eletrica">
+                                <a href="portfolio-single-1.html">
+                                    <div class="work-image"> <img src="assets/images/work-1.jpg" alt="Portfolio Item" /> </div>
+                                    <div class="work-caption font-alt">
+                                        <h3 class="work-title">Corporate Identity</h3>
+                                        <div class="work-descr">Illustration</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="work-item eletrica">
+                                <a href="portfolio-single-1.html">
+                                    <div class="work-image"> <img src="assets/images/work-1.jpg" alt="Portfolio Item" /> </div>
+                                    <div class="work-caption font-alt">
+                                        <h3 class="work-title">Corporate Identity</h3>
+                                        <div class="work-descr">Illustration</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="work-item eletrica">
+                                <a href="portfolio-single-1.html">
+                                    <div class="work-image"> <img src="assets/images/work-1.jpg" alt="Portfolio Item" /> </div>
+                                    <div class="work-caption font-alt">
+                                        <h3 class="work-title">Corporate Identity</h3>
+                                        <div class="work-descr">Illustration</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="module" id="alt-features">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                        <h2 class="module-title font-alt" style="text-align: left;">Quais são as vantagens da realização da manutenção preventiva?</h2>
+                        <div class="module-subtitle font-serif">
+                            <p style="text-align: left;">
+                                <spam class="recuo">M</spam>uitos proprietários de veículos simplesmente ignoram a ideia de encaminhar seu carro para um serviço preventivo de verificação de itens importantes para o funcionamento do automóvel.
+                                <br>
+                                <spam class="recuo">M</spam>as saiba que isso poderá lhe trazer uma série de vantagens — na maioria dos casos, indispensáveis para que você trafegue tranquilamente em seu dia a dia.
+                                <br>
+                                <spam class="recuo">D</spam>entre elas, as principais são:</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-4">
+                        <div class="alt-features-item">
+                            <div class="alt-features-icon"><span class="icon-strategy"></span></div>
+                            <h3 class="alt-features-title font-alt">Economia</h3>Uma das razões para a realização da manutenção preventiva do veículo no tempo correto é a economia, visto que evitar gastos nesse sentido é um barato que pode sair bem caro no futuro.
+                            <br>Uma peça quebrada ou funcionando inadequadamente — o que poderia ser previamente diagnosticado em uma manutenção — provavelmente terá o custo de reparo bem maior do que se o problema fosse identificado antes. </div>
+                        <div class="alt-features-item">
+                            <div class="alt-features-icon"><span class="icon-tools-2"></span></div>
+                            <h3 class="alt-features-title font-alt">Segurança</h3>Um veículo sem a devida manutenção preventiva pode ser uma verdadeira bomba-relógio, principalmente para quem viaja constantemente.
+                            <br>Imagine que seu carro esteja em alta velocidade e, de forma inesperada, apresente algum problema nos freios, câmbio, pneus ou parte elétrica?
+                            <br>A consequência disso pode ser um acidente gravíssimo envolvendo você e sua família. </div>
+                        <div class="alt-features-item">
+                            <div class="alt-features-icon"><span class="icon-target"></span></div>
+                            <h3 class="alt-features-title font-alt">Eficiência</h3>A manutenção preventiva serve para deixar o veículo com as regulagens mais adequadas para o seu devido funcionamento.
+                            <br>Consequentemente, o consumo de combustível será menor, fazendo com que você economize uma boa quantia de dinheiro ao longo do tempo.
+                            <br>Seu carro também se tornará menos poluente com esse tipo de atitude — e o meio-ambiente agradece! </div>
+                        <div class="alt-features-item">
+                            <div class="alt-features-icon"><span class="icon-tools"></span></div>
+                            <h3 class="alt-features-title font-alt">Valorização</h3>O cuidado com as manutenções preventivas no tempo correto acarretará em uma maior valorização do veículo em caso de revenda.
+                            <br>Os recibos entregues nas passagens pelas revisões são diferenciais relevantes a serem apresentados para um potencial comprador. </div>
+                    </div>
+                    <div class="col-md-6 col-md-offset-1 hidden-xs hidden-sm padd150">
+                        <div class="alt-services-image align-center"><img src="assets/images/family.jpg" alt="Família Unida"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--
+    TARJA PRETA BOTAO
+    *****************
+-->
+        <section class="module-small bg-dark" id="fxpreta">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+                        <div class="callout-text font-alt align-left">
+                            <h3 class="callout-title">De quanto em quanto tempo devo fazer a manutenção preventiva?</h3>
+                            <br>
+                            <p>
+                                <spam class="recuo">A</spam> manutenção preventiva deverá respeitar o tempo e a quilometragem indicada pelo fabricante no manual do usuário. Geralmente, a indicação é que ela seja feita de 6 em 6 meses, ou a cada 10 km rodados.</p>
+                            <p>
+                                <spam class="recuo">N</spam>os veículos usados, é recomendável seguir a sequência indicada para as primeiras revisões sugeridas pelo fabricante.
+                                <br>
+                                <spam class="recuo">E</spam>m caso de viagens mais longas, o veículo sempre deverá passar pela verificação dos principais itens — como pneus, óleo, suspensão, filtros, freios etc.
+                                <br>
+                                <spam class="recuo">A</spam> manutenção preventiva do veículo não diz respeito apenas ao seu meio de transporte, mas também ao seu bolso e à sua segurança, assim como de toda a sua família.</p>
+                            <p>
+                                <spam class="recuo">P</spam>ara não ser pego desprevenido, procure criar uma reserva financeira para que seu carro nunca fique sem a devida manutenção e você possa andar sempre tranquilo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="divider-w">
+        <section class="module bg-dark-60 pt-0 pb-0 parallax-bg testimonial" data-background="assets/images/Fundo_degrade_preto.png">
+            <div class="testimonials-slider pt-140 pb-140">
+                <ul class="slides">
+                    <li>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="module-icon"><span class="icon-quote"></span></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-8 col-sm-offset-2">
+                                    <blockquote class="testimonial-text font-alt">A CHECKVAR ME FEZ POUPAR UMA QUANTIA RASOÁVEL. NUNCA MAIS FAÇO MANUTENÇÃO NO MEU CARRO DE OUTRA FORMA!.</blockquote>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4 col-sm-offset-4">
+                                    <div class="testimonial-author">
+                                        <div class="testimonial-caption font-alt">
+                                            <div class="testimonial-title">RICARDO GIOS </div>
+                                            <div class="testimonial-descr">Audi A3 2017</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="module-icon"><span class="icon-quote"></span></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-8 col-sm-offset-2">
+                                    <blockquote class="testimonial-text font-alt">A FACILIDADE DE ENCONTRAR UMA OFICINA BOA, DE CONFIANÇA, COM ESTE APP, É SENSACIONAL</blockquote>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4 col-sm-offset-4">
+                                    <div class="testimonial-author">
+                                        <div class="testimonial-caption font-alt">
+                                            <div class="testimonial-title">ERIC MARTINS</div>
+                                            <div class="testimonial-descr">Dodge Charger 1972</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="module-icon"><span class="icon-quote"></span></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-8 col-sm-offset-2">
+                                    <blockquote class="testimonial-text font-alt">NADA SUBSTITUI A SENSAÇÃO DE RODAR COM SEU CARRO COM A MANUTENÇÃO EM DIA! SEGURANÇA TOTAL!</blockquote>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4 col-sm-offset-4">
+                                    <div class="testimonial-author">
+                                        <div class="testimonial-caption font-alt">
+                                            <div class="testimonial-title">MIGUEL MOURÃO </div>
+                                            <div class="testimonial-descr">Land Roover Defender 2014</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="module-icon"><span class="icon-quote"></span></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-8 col-sm-offset-2">
+                                    <blockquote class="testimonial-text font-alt">A CHECKVAR CUIDA DO MEU CARRO COMO SE FOSSE DELES. ESSE APP É 10!</blockquote>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4 col-sm-offset-4">
+                                    <div class="testimonial-author">
+                                        <div class="testimonial-caption font-alt">
+                                            <div class="testimonial-title">ZECA VIVEIROS</div>
+                                            <div class="testimonial-descr">Mercedes GLA 200 2018</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="module" id="team">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <h2 class="module-title font-alt">Conheça nosso time</h2>
+                        <div class="module-subtitle font-serif">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mb-sm-20 wow fadeInUp col-sm-6 col-md-3" onclick="wow fadeInUp">
+                        <div class="team-item">
+                            <div class="team-image"><img src="assets/images/team-1.jpg" alt="Member Photo" />
+                                <div class="team-detail">
+                                    <h5 class="font-alt">Hi all</h5>
+                                    <p class="font-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a&amp;nbsp;iaculis diam.</p>
+                                    <div class="team-social"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-dribbble"></i></a><a href="#"><i class="fa fa-skype"></i></a></div>
+                                </div>
+                            </div>
+                            <div class="team-descr font-alt">
+                                <div class="team-name">Jim Stone</div>
+                                <div class="team-role">Art Director</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-sm-20 wow fadeInUp col-sm-6 col-md-3" onclick="wow fadeInUp">
+                        <div class="team-item">
+                            <div class="team-image"><img src="assets/images/team-2.jpg" alt="Member Photo" />
+                                <div class="team-detail">
+                                    <h5 class="font-alt">Good day</h5>
+                                    <p class="font-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a&amp;nbsp;iaculis diam.</p>
+                                    <div class="team-social"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-dribbble"></i></a><a href="#"><i class="fa fa-skype"></i></a></div>
+                                </div>
+                            </div>
+                            <div class="team-descr font-alt">
+                                <div class="team-name">Andy River</div>
+                                <div class="team-role">Creative director</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-sm-20 wow fadeInUp col-sm-6 col-md-3" onclick="wow fadeInUp">
+                        <div class="team-item">
+                            <div class="team-image"><img src="assets/images/team-3.jpg" alt="Member Photo" />
+                                <div class="team-detail">
+                                    <h5 class="font-alt">Hello</h5>
+                                    <p class="font-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a&amp;nbsp;iaculis diam.</p>
+                                    <div class="team-social"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-dribbble"></i></a><a href="#"><i class="fa fa-skype"></i></a></div>
+                                </div>
+                            </div>
+                            <div class="team-descr font-alt">
+                                <div class="team-name">Adele Snow</div>
+                                <div class="team-role">Account manager</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-sm-20 wow fadeInUp col-sm-6 col-md-3" onclick="wow fadeInUp">
+                        <div class="team-item">
+                            <div class="team-image"><img src="assets/images/team-4.jpg" alt="Member Photo" />
+                                <div class="team-detail">
+                                    <h5 class="font-alt">Yes, it's me</h5>
+                                    <p class="font-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a&amp;nbsp;iaculis diam.</p>
+                                    <div class="team-social"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-dribbble"></i></a><a href="#"><i class="fa fa-skype"></i></a></div>
+                                </div>
+                            </div>
+                            <div class="team-descr font-alt">
+                                <div class="team-name">Dylan Woods</div>
+                                <div class="team-role">Developer</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--
+        
+        <section class="module" id="news">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="module-title font-alt">Latest blog posts</h2>
+                <div class="module-subtitle font-serif">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</div>
+              </div>
+            </div>
+            <div class="row multi-columns-row post-columns">
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="post mb-20">
+                  <div class="post-thumbnail"><a href="#"><img src="assets/images/post-1.jpg" alt="Blog-post Thumbnail"/></a></div>
+                  <div class="post-header font-alt">
+                    <h2 class="post-title"><a href="#">Our trip to the Alps</a></h2>
+                    <div class="post-meta">By&nbsp;<a href="#">Mark Stone</a>&nbsp;| 23 November | 3 Comments
+                    </div>
+                  </div>
+                  <div class="post-entry">
+                    <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                  </div>
+                  <div class="post-more"><a class="more-link" href="#">Read more</a></div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="post mb-20">
+                  <div class="post-thumbnail"><a href="#"><img src="assets/images/post-2.jpg" alt="Blog-post Thumbnail"/></a></div>
+                  <div class="post-header font-alt">
+                    <h2 class="post-title"><a href="#">Shore after the tide</a></h2>
+                    <div class="post-meta">By&nbsp;<a href="#">Andy River</a>&nbsp;| 11 November | 4 Comments
+                    </div>
+                  </div>
+                  <div class="post-entry">
+                    <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                  </div>
+                  <div class="post-more"><a class="more-link" href="#">Read more</a></div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="post mb-20">
+                  <div class="post-thumbnail"><a href="#"><img src="assets/images/post-3.jpg" alt="Blog-post Thumbnail"/></a></div>
+                  <div class="post-header font-alt">
+                    <h2 class="post-title"><a href="#">We in New Zealand</a></h2>
+                    <div class="post-meta">By&nbsp;<a href="#">Dylan Woods</a>&nbsp;| 5 November | 15 Comments
+                    </div>
+                  </div>
+                  <div class="post-entry">
+                    <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                  </div>
+                  <div class="post-more"><a class="more-link" href="#">Read more</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+-->
+        <!--
+        
+        <div class="module-small bg-dark">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-md-6 col-lg-4 col-lg-offset-2">
+                <div class="callout-text font-alt">
+                  <h3 class="callout-title">Subscribe now</h3>
+                  <p>We will not spam your email.</p>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="callout-btn-box">
+                  <form id="subscription-form" role="form" method="post" action="php/subscribe.php">
+                    <div class="input-group">
+                      <input class="form-control" type="email" id="semail" name="semail" placeholder="Your Email" data-validation-required-message="Please enter your email address." required="required"/><span class="input-group-btn">
+                        <button class="btn btn-g btn-round" id="subscription-form-submit" type="submit">Submit</button></span>
+                    </div>
+                  </form>
+                  <div class="text-center" id="subscription-response"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+-->
+        <section class="module" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <h2 class="module-title font-alt">Entre em contato conosco</h2>
+                        <div class="module-subtitle font-serif"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <form id="contactForm" role="form" method="post" action="php/contact.php">
+                            <div class="form-group">
+                                <label class="sr-only" for="name">Nome</label>
+                                <input class="form-control" type="text" id="name" name="name" placeholder="Seu Name*" required="required" data-validation-required-message="Por favor coloque seu nome." />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="email">E-mail</label>
+                                <input class="form-control" type="email" id="email" name="email" placeholder="Seu E-mail*" required="required" data-validation-required-message="Por favor coloque seu e-mail." />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" rows="7" id="message" name="message" placeholder="Escreva sua mensagem*" required="required" data-validation-required-message="Por favor, digite sua mensagem"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="text-center">
+                                <button class="btn btn-block btn-round btn-d" id="cfsubmit" type="submit">Enviar</button>
+                            </div>
+                        </form>
+                        <div class="ajax-response font-alt" id="contactFormResponse"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--
+        <div class="module-small bg-dark">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-3">
+                <div class="widget">
+                  <h5 class="widget-title font-alt">About Titan</h5>
+                  <p>The languages only differ in their grammar, their pronunciation and their most common words.</p>
+                  <p>Phone: +1 234 567 89 10</p>Fax: +1 234 567 89 10
+                  <p>Email:<a href="#">somecompany@example.com</a></p>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="widget">
+                  <h5 class="widget-title font-alt">Recent Comments</h5>
+                  <ul class="icon-list">
+                    <li>Maria on <a href="#">Designer Desk Essentials</a></li>
+                    <li>John on <a href="#">Realistic Business Card Mockup</a></li>
+                    <li>Andy on <a href="#">Eco bag Mockup</a></li>
+                    <li>Jack on <a href="#">Bottle Mockup</a></li>
+                    <li>Mark on <a href="#">Our trip to the Alps</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="widget">
+                  <h5 class="widget-title font-alt">Blog Categories</h5>
+                  <ul class="icon-list">
+                    <li><a href="#">Photography - 7</a></li>
+                    <li><a href="#">Web Design - 3</a></li>
+                    <li><a href="#">Illustration - 12</a></li>
+                    <li><a href="#">Marketing - 1</a></li>
+                    <li><a href="#">Wordpress - 16</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="widget">
+                  <h5 class="widget-title font-alt">Popular Posts</h5>
+                  <ul class="widget-posts">
+                    <li class="clearfix">
+                      <div class="widget-posts-image"><a href="#"><img src="assets/images/rp-1.jpg" alt="Post Thumbnail"/></a></div>
+                      <div class="widget-posts-body">
+                        <div class="widget-posts-title"><a href="#">Designer Desk Essentials</a></div>
+                        <div class="widget-posts-meta">23 january</div>
+                      </div>
+                    </li>
+                    <li class="clearfix">
+                      <div class="widget-posts-image"><a href="#"><img src="assets/images/rp-2.jpg" alt="Post Thumbnail"/></a></div>
+                      <div class="widget-posts-body">
+                        <div class="widget-posts-title"><a href="#">Realistic Business Card Mockup</a></div>
+                        <div class="widget-posts-meta">15 February</div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+-->
+        <hr class="divider-d">
+        <footer class="footer bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-4 col-xs-offset-4 hidden-md hidden-lg">
+                        <div class="footer-social-links"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-skype"></i></a> </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <p class="copyright font-alt">&copy; 2019&nbsp;<a href="https://transitabile.com.br/portal/">Transitabile</a>, All Rights Reserved</p>
+                    </div>
+                    <div class="col-md-6 hidden-xs hidden-sm">
+                        <div class="footer-social-links"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-skype"></i></a> </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--      </div>-->
+        <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
+    </main>
+    <!--  
+    JavaScripts
+    =============================================
+    -->
+    <script type="text/javascript">
+        function abrirefechar() {
+            $("#works").toggle(500);
+        }
+        //        var slider3 = function (_x, _y, _z){
+        var slider3 = function () {
+            var _x = 'slide1'
+                , _y = 'slide2'
+                , _z = 'slide3';
+            if ($('input:radio[id="' + _x + '"]').is(':checked') == true) {
+                //                    alert("slide1");
+                $('input:radio[id="' + _x + '"]').attr('checked', false);
+                $('input:radio[id="' + _y + '"]').attr('checked', true);
+                $('input:radio[id="' + _z + '"]').attr('checked', false);
+            }
+            else if ($('input:radio[id="' + _y + '"]').is(':checked') == true) {
+                //                    alert("slide2");
+                $('input:radio[id="' + _y + '"]').attr('checked', false);
+                $('input:radio[id="' + _z + '"]').attr('checked', true);
+                $('input:radio[id="' + _x + '"]').attr('checked', false);
+            }
+            else if ($('input:radio[id="' + _z + '"]').is(':checked') == true) {
+                //                    alert("slide3");
+                $('input:radio[id="' + _z + '"]').attr('checked', false);
+                $('input:radio[id="' + _x + '"]').attr('checked', true);
+                $('input:radio[id="' + _y + '"]').attr('checked', false);
+            }
+        };
+        let g_if = 0;
+        let g_func = 0;
+        var slider6 = function () {
+            var _x = 'slide4'
+                , _y = 'slide5'
+                , _z = 'slide6'
+                , _k = 'slide7'
+                , _i = 'slide8'
+                , _c = 'slide9';
+            if ($('input:radio[id="slide4"]').is(':checked') == true) {
+                //                    alert("slide1");
+                $('input:radio[id="slide4"]').attr('checked', false);
+                $('input:radio[id="slide6"]').attr('checked', false);
+                $('input:radio[id="slide5"]').attr('checked', true);
+                //                $('input:radio[id="slide7"]').attr('checked', false);
+                //                $('input:radio[id="slide8"]').attr('checked', false);
+                //                $('input:radio[id="slide9"]').attr('checked', false);
+                g_if++;
+            }
+            else if ($('input:radio[id="slide5"]').is(':checked') == true) {
+                //                    alert("slide2");
+                $('input:radio[id="slide5"]').attr('checked', false);
+                $('input:radio[id="slide4"]').attr('checked', false);
+                $('input:radio[id="slide6"]').attr('checked', true);
+                //                $('input:radio[id="slide7"]').attr('checked', false);
+                //                $('input:radio[id="slide8"]').attr('checked', false);
+                //                $('input:radio[id="slide9"]').attr('checked', false);
+                g_if++;
+            }
+            else if ($('input:radio[id="slide6"]').is(':checked') == true) {
+                //                    alert("slide3");
+                $('input:radio[id="slide6"]').attr('checked', false);
+                //                $('input:radio[id="slide7"]').attr('checked', true);
+                $('input:radio[id="slide5"]').attr('checked', false);
+                $('input:radio[id="slide4"]').attr('checked', true);
+                //                $('input:radio[id="slide8"]').attr('checked', false);
+                //                $('input:radio[id="slide9"]').attr('checked', false);
+                g_if++;
+            }
+            //            else if ($('input:radio[id="' + _k + '"]').is(':checked') == true) { // // alert("slide4"); // $('input:radio[id="slide7"]').attr('checked', false); // $('input:radio[id="slide8"]').attr('checked', true); // $('input:radio[id="slide4"]').attr('checked', false); // $('input:radio[id="slide5"]').attr('checked', false); // $('input:radio[id="slide6"]').attr('checked', false); // $('input:radio[id="slide9"]').attr('checked', false); // g_if++; // } // else if ($('input:radio[id="slide8"]').is(':checked') == true) { // // alert("slide5"); // $('input:radio[id="slide8"]').attr('checked', false); // $('input:radio[id="slide9"]').attr('checked', true); // $('input:radio[id="slide4"]').attr('checked', false); // $('input:radio[id="slide5"]').attr('checked', false); // $('input:radio[id="slide6"]').attr('checked', false); // $('input:radio[id="slide7"]').attr('checked', false); // g_if++; // } // else if ($('input:radio[id="slide9"]').is(':checked') == true) { // // alert("slide6"); // $('input:radio[id="slide9"]').attr('checked', false); // $('input:radio[id="slide4"]').attr('checked', true); // $('input:radio[id="slide5"]').attr('checked', false); // $('input:radio[id="slide6"]').attr('checked', false); // $('input:radio[id="slide7"]').attr('checked', false); // $('input:radio[id="slide8"]').attr('checked', false); // g_if++; // }
+            g_func++;
+            console.log(g_func + "---func");
+            console.log(g_if + "-----------if");
+        };
+
+        function iniciaSlides() {}
+
+        function iniciar() {
+            //            setInterval(slider3("slide1","slide2","slide3"), 2000);
+            setInterval(slider3, 4000);
+            //            setInterval(slider6, 1500);
+            setInterval(slider6, 4000);
+            iniciaSlides();
+            abrirefechar();
+        }
+        window.addEventListener("load", iniciar, false);
+        //        $("#works").toggle(10);
+        abrirefechar();
+    </script>
+    <script src="assets/lib/jquery/dist/jquery.js"></script>
+    <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/lib/wow/dist/wow.js"></script>
+    <script src="assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
+    <script src="assets/lib/isotope/dist/isotope.pkgd.js"></script>
+    <script src="assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
+    <script src="assets/lib/flexslider/jquery.flexslider.js"></script>
+    <script src="assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="assets/lib/smoothscroll.js"></script>
+    <script src="assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
+    <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
